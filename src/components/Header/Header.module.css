@@ -1,0 +1,29 @@
+.container {
+  height: 773px;
+  position: relative;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+.logo {
+  position: absolute;
+
+  top: 61px;
+}
+.title {
+  position: absolute;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+
+  /* or 117% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}

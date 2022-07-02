@@ -8,22 +8,24 @@ const Header = () => {
       <img src={background} className={styles.background} alt={"background"} />
       <div className={styles.topbar}>
         <img src={logo} className={styles.logo} alt={"logo"} />
-        <div className={styles.headermenu}></div>
+        <div className={styles.headermenu}>
+          <div className={styles.headermenuNav}>Home</div>
+          <div className={styles.headermenuNav}>Contacts</div>
+          <button className={styles.headermenuBtn}>Contact us</button>
+        </div>
       </div>
 
-      <div className={styles.title}>
+      <div className={styles.infoContainer}>
         <h1 className={styles.text}>
           Experts in managing and manipulating data
         </h1>
-      </div>
-      <div>
         <span className={styles.description}>
           A highly skilled agency specialising in the management of data for
           companies of all sizes. We can help you manage your full data
           life-cycle from retrieval to presentation.
         </span>
+        <button className={styles.infoBtn}>Consult today</button>
       </div>
-      <button className={styles.buttonheader}>Consult today</button>
     </div>
   );
 };

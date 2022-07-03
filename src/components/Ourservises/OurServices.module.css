@@ -5,9 +5,32 @@
     margin-top: 195px;
 }
 
+.title{
+    margin: 0;
+    font-family: 'Mulish';
+font-size: 36px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+
+}
+.text{
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 1142.4000244140625px;
+font-family: 'Mulish';
+font-size: 18px;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+color: #7D7987;
+
+
+}
 .cardContainer{
     display: flex;
     width: 1436px;
-    justify-content: space-between;
-   
+    justify-content: center;
 }

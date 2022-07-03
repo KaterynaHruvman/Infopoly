@@ -28,8 +28,8 @@ const OurServices = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Our IT services</h1>
-            <h5>We provide to you the best choiches for you. Adjust it to your needs and make sure
+            <h1 className={styles.title}>Our IT services</h1>
+            <h5 className={styles.text}>We provide to you the best choiches for you. Adjust it to your needs and make sure
             you get full lifecycle management from design, development, implementation and maintenance.
                 We can help and advise the most suitable technology for your requirements.</h5>
             <div className={styles.cardContainer}>

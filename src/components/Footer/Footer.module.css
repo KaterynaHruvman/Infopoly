@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    position: relative;
+    height: 463px;
+    margin-top: 100px;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    z-index: -5;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 113px;
+    margin-left: 424px;
+}
+
+.logo{
+    height: 77px;
+    width: 240px;
+}
+
+.infoText{
+    margin: 0;
+    margin-top:18px;
+    height: 128px;
+    width: 469.20001220703125px;
+font-family: 'Mulish';
+font-size: 21px;
+font-weight: 300;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+color: #7D7987;
+}
+
+.policy{
+    font-family: 'Mulish';
+font-size: 16px;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #696767;
+margin-top: 14px;
+}
+
+.navigation{
+    height: 100%;
+    display: flex;
+}
+
+.company, .region, .help{
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+.company{
+    margin-left: 230px;
+}
+
+.region{
+    margin-left: 117px;
+}
+
+.help{
+    margin-left: 140px;
+}
+
+.companyTitle, .regionTitle, .helpTitle{
+    font-family: 'Mulish';
+font-size: 20px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+color: #696767;
+margin-bottom: 2px;
+}
+
+.companyNav, .regionNav, .helpNav{
+    font-family: 'Mulish';
+font-size: 18px;
+font-weight: 300;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+cursor: pointer;
+color: #696767;
+
+}
+

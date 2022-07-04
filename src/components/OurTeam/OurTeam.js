@@ -4,7 +4,7 @@ import TeamMember from "./TeamMember/TeamMember";
 import Dariush from "../../assets/images/team/corporate_portrait-100.jpg"
 import Matthew from "../../assets/images/team/corporate_portrait-96.jpg"
 import Isabela from "../../assets/images/team/Isabela.jpeg"
-import Kateryna from "../../assets/images/1-191.jpg"
+import Kateryna from "../../assets/images/IMG_3326.jpeg"
 import background from "../../assets/images/Rectangle 20.png";
 const teamMembers = [
   {id: 1, img: Dariush, name: 'Dariush Bielak', job_title: 'Founder', bio: 'Bio'},

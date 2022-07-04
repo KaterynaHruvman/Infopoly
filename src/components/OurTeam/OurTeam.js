@@ -4,12 +4,13 @@ import TeamMember from "./TeamMember/TeamMember";
 import Dariush from "../../assets/images/team/corporate_portrait-100.jpg"
 import Matthew from "../../assets/images/team/corporate_portrait-96.jpg"
 import Isabela from "../../assets/images/team/Isabela.jpeg"
+import Kateryna from "../../assets/images/1-191.jpg"
 import background from "../../assets/images/Rectangle 20.png";
 const teamMembers = [
   {id: 1, img: Dariush, name: 'Dariush Bielak', job_title: 'Founder', bio: 'Bio'},
   {id: 2, img: Matthew, name: 'Matthew Thrower', job_title: 'Founder', bio: 'Bio'},
   {id: 3, img: Isabela, name: 'Isabela Cinca', job_title: 'Data Analyst', bio: 'Bio'},
-  // {id: 4, img: Mario, name: 'Mario Costa', job_title: 'Developer', bio: 'Bio'},
+  {id: 4, img: Kateryna, name: 'Kateryna Hruvman', job_title: 'Developer', bio: 'Bio'},
 ]
 
 const OurTeam = () => {
@@ -26,7 +27,7 @@ const OurTeam = () => {
         <div>Founders</div>
         <div>Designers</div>
         <div>Developers</div>
-        <div>Management</div>
+        <div>Data Analyst</div>
       </div>
       <div className={styles.membersContainer}>
         {

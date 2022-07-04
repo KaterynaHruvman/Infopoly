@@ -21,10 +21,10 @@ const Footer = () => {
                 </div>
                 <div className={styles.region}>
                     <div className={styles.regionTitle}>Region</div>
-                    <div className={styles.regionNav}>Indonesia</div>
-                    <div className={styles.regionNav}>Singapore</div>
-                    <div className={styles.regionNav}>Hong Kong</div>
-                    <div className={styles.regionNav}>Canada</div>
+                    <div className={styles.regionNav}>United Kingdom</div>
+                    <div className={styles.regionNav}>Australia</div>
+                    <div className={styles.regionNav}>Ukraine</div>
+                    <div className={styles.regionNav}>Sri Lanka</div>
                 </div>
                 <div className={styles.help}>
                     <div className={styles.helpTitle}>Help</div>

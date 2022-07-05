@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import background from '../../assets/images/infoPoly_main_bg_desktop 4.png'
+import background from '../../assets/images/infoPoly_main_bg_desktop_1 2.png'
 import logo from '../../assets/images/infoPoly_logo 1.png';
 const Footer = () => {
     return (

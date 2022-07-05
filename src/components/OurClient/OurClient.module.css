@@ -3,5 +3,37 @@
     align-items: center;
     height: 500px;
     justify-content: center;
+     position: relative;
+     flex-direction: column;
+   
+
 }
 
+.title{
+     margin: 0;
+   
+font-family: 'Mulish';
+font-size: 36px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.clients{
+    display: flex;
+}
+.coeus{
+    height: 129px;
+    margin-top:160px;
+width: 475px;
+    margin-right: 130px;
+    cursor: pointer;
+}
+.trendelie{
+    height: 129px;
+    margin-top:160px;
+width: 475px;
+    margin-right: 130px;
+    cursor: pointer;
+}

@@ -3,7 +3,7 @@ import styles from "./OurTeam.module.css";
 import TeamMember from "./TeamMember/TeamMember";
 import Dariush from "../../assets/images/team/corporate_portrait-100.jpg"
 import Matthew from "../../assets/images/team/corporate_portrait-96.jpg"
-import Isabela from "../../assets/images/team/Isabela.jpeg"
+import Isabela from "../../assets/images/Isabela.png"
 import Kateryna from "../../assets/images/IMG_3326.jpeg"
 import background from "../../assets/images/Rectangle 20.png";
 const teamMembers = [

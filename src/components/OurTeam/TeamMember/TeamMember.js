@@ -2,18 +2,22 @@ import {useState} from 'react'
 import styles from './TeamMember.module.css';
 
 const TeamMember = (props) => {
-    const [isRotated, setIsRotated]= useState(false)
     const {img, name, job_title, bio} = props.member
     return (
-        <div className={!isRotated ? styles.container : styles.rotatedContainer} onClick={()=>setIsRotated(prev=>!prev)}>  
-          {!isRotated && <img className={styles.img} src={img} alt={name} />}
-            <h1 className={styles.name}>{name}</h1>
-            <h3 className={styles.jobTitle}>{job_title}</h3>
-            {isRotated && <span className={styles.bio}>{bio}</span>}
-                   
-                    
-            
-        </div>
+        <div className={styles.mainContainer}>
+            <div className={styles.theCard}>
+                <div className={styles.theFront}>
+                    <img src={img} className={styles.img} alt={img} />
+                    <h1 className={styles.name}>{name}</h1>
+                    <h2 className={styles.jobTitle}>{job_title}</h2>
+                </div>
+                <div className={styles.theBack}>
+                    <h1 className={styles.name}>{name}</h1>
+                    <h2 className={styles.jobTitle}>{job_title}</h2>
+                    <span className={styles.bio}>{bio}</span>
+                </div>
+            </div>
+       </div>
     )
 }
 

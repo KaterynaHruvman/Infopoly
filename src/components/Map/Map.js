@@ -6,7 +6,7 @@ const Map = () => {
     return (
         <div className={styles.container}>
             
-            <h2 className={styles.title}> </h2>
+            <h2 className={styles.title}>Our company has united international team all around the world </h2>
 
             <div className={styles.mapBg}>
                 <img src={mapBg} className={styles.mapbg} alt={"mapbg"} />

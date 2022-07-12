@@ -6,6 +6,7 @@ import Matthew from "../../assets/images/team/corporate_portrait-96.jpg"
 import Isabela from "../../assets/images/Isabela.png"
 import Kateryna from "../../assets/images/IMG_3326.jpeg"
 import background from "../../assets/images/Rectangle 20.png";
+import background2 from "../../assets/images/Rectangle 24.png";
 const teamMembers = [
   {id: 1, img: Dariush, name: 'Dariush Bielak', job_title: 'Founder', bio: 'Bio'},
   {id: 2, img: Matthew, name: 'Matthew Thrower', job_title: 'Founder', bio: 'Bio'},
@@ -23,6 +24,7 @@ const OurTeam = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Meet Our Team</h1>
       <img className={styles.background} src={background} alt={'rectangle'}/>
+      <img className={styles.background2} src={background2} alt={'rectangle'}/>
       <div className={styles.navigation}>
         <div>Founders</div>
         <div>Designers</div>

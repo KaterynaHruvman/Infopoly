@@ -10,6 +10,9 @@
     background-color: #9BFFC7;
     cursor: pointer;
     border-radius: 20px;
+   position: relative;
+
+perspective: 1000px;
 
 }
 .img{
@@ -38,6 +41,9 @@ img:hover{
     background-color:#05C157;
     cursor: pointer;
     border-radius: 20px;
+ /* transform: rotateY(180deg);
+ transition: 1s; */
+
 }
 
 .container .name{
@@ -99,3 +105,7 @@ letter-spacing: 0em;
 
 
 }
+/* .container:hover {
+  transform: rotateY(180deg);}
+.rotatedContainer:hover {
+  transform: rotateY(360deg);} */

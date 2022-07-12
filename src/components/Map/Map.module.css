@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+}
+
+
+.mapbg{
+  
+    z-index: -5;
+    position: absolute;
+}
+.map{
+    height: 883px;
+width: 1249px;
+
+margin-left: 373px;
+margin-top:214px;
+}

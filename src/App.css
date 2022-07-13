@@ -2,3 +2,6 @@ button{
     border: none;
     cursor: pointer;
 }
+.App{
+    overflow-x: hidden;
+}

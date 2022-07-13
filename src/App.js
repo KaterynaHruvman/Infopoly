@@ -5,6 +5,7 @@ import OurTeam from "./components/OurTeam/OurTeam";
 import Footer from "./components/Footer/Footer";
 import OurClient from "./components/OurClient/OurClient";
 import Map from "./components/Map/Map"
+import './App.css'
 function App() {
   return (
     <div className="App">

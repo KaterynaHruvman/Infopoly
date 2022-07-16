@@ -130,7 +130,7 @@ margin-top:40px
 }
 .topbar{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .headermenu{
   display: flex;

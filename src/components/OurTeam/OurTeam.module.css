@@ -41,9 +41,15 @@ line-height: 56px;
 letter-spacing: 0em;
 cursor: pointer;
 }
-
+.activeTab{
+  color: green;
+  border-bottom: 1px solid violet;
+}
 .membersContainer{
   display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {

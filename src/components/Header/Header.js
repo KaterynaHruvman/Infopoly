@@ -2,6 +2,7 @@ import styles from "./Header.module.css";
 
 import background from "../../assets/images/infoPoly_main_bg_desktop_1 1.png";
 import logo from "../../assets/images/infoPoly_logo 1.png";
+import menu from "../../assets/images/menu.png";
 const Header = () => {
   return (
     <div className={styles.container}>
@@ -12,6 +13,7 @@ const Header = () => {
           <div className={styles.headermenuNav}>Home</div>
           <div className={styles.headermenuNav}>Contacts</div>
           <button className={styles.headermenuBtn}>Contact us</button>
+          <button className={styles.menuBtn}><img src={menu} alt="menu"/></button>
         </div>
       </div>
 

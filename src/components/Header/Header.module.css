@@ -60,7 +60,9 @@ line-height: 38px;
 letter-spacing: 0em;
 text-align: center;
 }
-
+.menuBtn{
+  display: none;
+}
 .infoContainer{
   display: flex;
   flex-direction: column;
@@ -207,6 +209,97 @@ border-radius: 55px;
 background-color: #07DA62;
 font-family: 'Mulish';
 font-size: 14px;
+font-weight: 700;
+line-height:26px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+}
+
+}
+@media screen and (max-width: 428px) {
+  .background{
+    width: 300%;
+    left: -150%;
+  }
+.logo {
+height: 30px;
+width: 38vw;
+margin-left: 20px;
+margin-top: 25px
+
+
+}
+.headermenu{
+  display: flex;
+  margin-top: 28px;
+  margin-left: 18vw;
+}
+.menuBtn{
+  display: inline;
+  margin-left: 20px;
+  background-color: transparent;
+}
+.headermenuNav{
+ display: none;
+}
+.headermenuNav:hover{
+  color: #1F1534;
+  font-weight: 700;
+}
+.headermenuBtn{
+  margin-left: 0;
+  height: 25px;
+width: 30vw;
+border-radius: 55px;
+background-color: #059042;
+color: white;
+font-family: 'Mulish';
+font-size: 12px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.infoContainer{
+  display: flex;
+  flex-direction: column;
+  width: 196px;
+  margin-top: 60px;
+  margin-left: 12.5%;
+}
+.text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #152A3D;
+  line-height: 18px;
+  width: 178px;
+  margin: 0;
+}
+.description {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  font-family: 'Mulish';
+font-size: 12px;
+font-weight: 300;
+line-height: 15.5px;
+letter-spacing: 0em;
+text-align: left;
+color: #152A3D;
+width: 196px;
+}
+
+.infoBtn{
+  height: 26px;
+width: 116px;
+border-radius: 55px;
+background-color: #07DA62;
+font-family: 'Mulish';
+font-size: 12px;
 font-weight: 700;
 line-height:26px;
 letter-spacing: 0em;

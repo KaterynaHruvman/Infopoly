@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/infopoly/static/css/main.5dab8c39.css",
-    "main.js": "/infopoly/static/js/main.6fcd4512.js",
-    "static/media/IMG_3326.jpeg": "/infopoly/static/media/IMG_3326.77aa278c7c2593615623.jpeg",
-    "static/media/corporate_portrait-96.jpg": "/infopoly/static/media/corporate_portrait-96.31666e5dcbf9397d176e.jpg",
-    "static/media/infopoly_map 2.png": "/infopoly/static/media/infopoly_map 2.ed1a4e2f1c35675048f1.png",
-    "static/media/corporate_portrait-100.jpg": "/infopoly/static/media/corporate_portrait-100.3662ea5013ee0ca468c6.jpg",
-    "static/media/infopoly_map_bg_desktop_1 3.png": "/infopoly/static/media/infopoly_map_bg_desktop_1 3.c62ef262f840591d0703.png",
-    "static/media/infoPoly_main_bg_desktop_1 1.png": "/infopoly/static/media/infoPoly_main_bg_desktop_1 1.bc68c88d6bf68705a84a.png",
-    "static/media/Isabela.png": "/infopoly/static/media/Isabela.07074ad3c2fa5dd3745d.png",
-    "static/media/infoPoly_main_bg_desktop_1 2.png": "/infopoly/static/media/infoPoly_main_bg_desktop_1 2.ef4cf5e3ee97acc1f148.png",
-    "static/media/profile_picture.png": "/infopoly/static/media/profile_picture.4be410bb11062d10c06f.png",
-    "static/media/COEUS Solutions Logo CMYK 1.png": "/infopoly/static/media/COEUS Solutions Logo CMYK 1.225f0128ae709b4a88b1.png",
-    "static/media/NEW TREND LOGO-2 1.png": "/infopoly/static/media/NEW TREND LOGO-2 1.4df2e8f04f1ddabf4581.png",
-    "static/media/mariolima.jpg": "/infopoly/static/media/mariolima.4caf93e202a7b4e4dbff.jpg",
-    "static/media/Rectangle 24.png": "/infopoly/static/media/Rectangle 24.a188c720369da5f6cca0.png",
-    "static/media/Rectangle 20.png": "/infopoly/static/media/Rectangle 20.1918ebad7711006ab52a.png",
-    "index.html": "/infopoly/index.html",
-    "main.5dab8c39.css.map": "/infopoly/static/css/main.5dab8c39.css.map",
-    "main.6fcd4512.js.map": "/infopoly/static/js/main.6fcd4512.js.map"
+    "main.css": "/Infopoly/static/css/main.5dab8c39.css",
+    "main.js": "/Infopoly/static/js/main.0b7aa12b.js",
+    "static/media/IMG_3326.jpeg": "/Infopoly/static/media/IMG_3326.77aa278c7c2593615623.jpeg",
+    "static/media/corporate_portrait-96.jpg": "/Infopoly/static/media/corporate_portrait-96.31666e5dcbf9397d176e.jpg",
+    "static/media/infopoly_map 2.png": "/Infopoly/static/media/infopoly_map 2.ed1a4e2f1c35675048f1.png",
+    "static/media/corporate_portrait-100.jpg": "/Infopoly/static/media/corporate_portrait-100.3662ea5013ee0ca468c6.jpg",
+    "static/media/infopoly_map_bg_desktop_1 3.png": "/Infopoly/static/media/infopoly_map_bg_desktop_1 3.c62ef262f840591d0703.png",
+    "static/media/infoPoly_main_bg_desktop_1 1.png": "/Infopoly/static/media/infoPoly_main_bg_desktop_1 1.bc68c88d6bf68705a84a.png",
+    "static/media/Isabela.png": "/Infopoly/static/media/Isabela.07074ad3c2fa5dd3745d.png",
+    "static/media/infoPoly_main_bg_desktop_1 2.png": "/Infopoly/static/media/infoPoly_main_bg_desktop_1 2.ef4cf5e3ee97acc1f148.png",
+    "static/media/profile_picture.png": "/Infopoly/static/media/profile_picture.4be410bb11062d10c06f.png",
+    "static/media/COEUS Solutions Logo CMYK 1.png": "/Infopoly/static/media/COEUS Solutions Logo CMYK 1.225f0128ae709b4a88b1.png",
+    "static/media/NEW TREND LOGO-2 1.png": "/Infopoly/static/media/NEW TREND LOGO-2 1.4df2e8f04f1ddabf4581.png",
+    "static/media/mariolima.jpg": "/Infopoly/static/media/mariolima.4caf93e202a7b4e4dbff.jpg",
+    "static/media/Rectangle 24.png": "/Infopoly/static/media/Rectangle 24.a188c720369da5f6cca0.png",
+    "static/media/Rectangle 20.png": "/Infopoly/static/media/Rectangle 20.1918ebad7711006ab52a.png",
+    "index.html": "/Infopoly/index.html",
+    "main.5dab8c39.css.map": "/Infopoly/static/css/main.5dab8c39.css.map",
+    "main.0b7aa12b.js.map": "/Infopoly/static/js/main.0b7aa12b.js.map"
   },
   "entrypoints": [
     "static/css/main.5dab8c39.css",
-    "static/js/main.6fcd4512.js"
+    "static/js/main.0b7aa12b.js"
   ]
 }

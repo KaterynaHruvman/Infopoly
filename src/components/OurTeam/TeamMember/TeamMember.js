@@ -12,8 +12,8 @@ const TeamMember = (props) => {
                     <h2 className={styles.jobTitle}>{job_title}</h2>
                 </div>
                 <div className={styles.theBack}>
-                    <h1 className={styles.name}>{name}</h1>
-                    <h2 className={styles.jobTitle}>{job_title}</h2>
+                    {/* <h1 className={styles.name}>{name}</h1>
+                    <h2 className={styles.jobTitle}>{job_title}</h2> */}
                     <span className={styles.bio}>{bio}</span>
                 </div>
             </div>

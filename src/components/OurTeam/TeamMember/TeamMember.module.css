@@ -241,3 +241,58 @@ line-height: 14.5px;
 letter-spacing: 0em;
 }
 }
+
+@media screen and (max-width: 428px) {
+.mainContainer{
+    height: 208px;
+    width: 135px;
+    margin: 10px;
+    
+}
+
+.theFront .name{
+    margin: 0;
+font-size: 12px;
+line-height: 15px;
+width: 100%;
+}
+
+.theFront .jobTitle{
+    font-size: 10px;
+    margin: 0;
+}
+
+.theBack .name{
+    margin: 0;
+    margin-top: 25.82px;
+    color: white;
+    font-family: 'Mulish';
+font-size: 16px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0em;
+}
+
+.theBack .jobTitle{
+    margin: 0;
+    margin-top: 7px;
+    color: white;
+    font-family: 'Mulish';
+font-size: 15px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+
+}
+.bio{
+    margin-top: 33px;
+    color: white;
+    height: 144px;
+width: 75%;
+font-family: 'Mulish';
+font-size: 11px;
+font-weight: 300;
+line-height: 14.5px;
+letter-spacing: 0em;
+}
+}

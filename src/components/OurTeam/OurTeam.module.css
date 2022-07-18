@@ -103,3 +103,39 @@ cursor: pointer;
   display: flex;
 }
 }
+@media screen and (max-width: 428px) {
+.container {  
+  padding-bottom: 99.9px;
+}
+.title {
+  margin: 0;
+  margin-bottom: 57.13px;
+  margin-top: 50px;
+  margin-bottom: 32px;
+font-size: 16px;
+line-height: 20px;
+
+}
+.background{
+  width: 137vw;
+}
+.background2{
+  width: 137vw;
+}
+.navigation{
+  margin-bottom: 17px;
+}
+
+.navigation >div{
+  margin-left: 10px;
+font-size: 11px;
+line-height: 13px;
+
+}
+
+.membersContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+}

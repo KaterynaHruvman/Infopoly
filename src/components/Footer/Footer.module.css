@@ -191,3 +191,45 @@ color: #696767;
 
 }
 }
+@media screen and (max-width: 428px){
+.container {
+    
+    height: 218px;
+    margin-top: 0;
+}
+
+.background{
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-left: 6.25vw;
+}
+
+.logo{
+    height: 27px;
+    width: 84px;
+}
+
+.infoText{
+    margin: 0;
+    margin-top: 20px;
+    width: 87vw;
+font-size: 11px;
+line-height: 15px;
+height: 76px;
+
+}
+
+.policy{
+font-size: 12px;
+line-height: 15px;
+margin-top: 33px;
+}
+
+.navigation{
+    display: none;
+}
+}

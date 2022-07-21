@@ -34,6 +34,13 @@ width: 475px;
     margin-right: 130px;
     cursor: pointer;
 }
+.tabush{
+     height: 129px;
+    margin-top:160px;
+    width: 475px;
+    margin-right: 130px;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 768px){
 .container {
@@ -76,6 +83,13 @@ text-align: center;
     cursor: pointer;
     width: 283px;
 }
+.tabush{
+    height: 84px;
+    margin-top: 0;
+    margin-right: 0;
+    cursor: pointer;
+    width: 283px;
+}
 }
 @media screen and (max-width: 428px){
 .container {
@@ -106,6 +120,14 @@ line-height: 20px;
     margin-bottom: 20px;
 }
 .trendelie{
+    height: 56px;
+    margin-top: 0;
+    margin-right: 0;
+    cursor: pointer;
+    width: 188px;
+}
+.tabush{
+  
     height: 56px;
     margin-top: 0;
     margin-right: 0;

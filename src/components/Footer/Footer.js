@@ -28,10 +28,10 @@ const Footer = () => {
                 </div>
                 <div className={styles.help}>
                     <div className={styles.helpTitle}>Help</div>
-                    <div className={styles.helpNav}>Help center</div>
+                    {/* <div className={styles.helpNav}>Help center</div> */}
                     <div className={styles.helpNav}>Contact support</div> 
-                    <div className={styles.helpNav}>Instruction</div> 
-                    <div className={styles.helpNav}>How it works</div> 
+                    {/* <div className={styles.helpNav}>Instruction</div> 
+                    <div className={styles.helpNav}>How it works</div>  */}
                 </div>
             </div>
         </div>

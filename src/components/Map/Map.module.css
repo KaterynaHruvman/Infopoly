@@ -4,18 +4,21 @@
     flex-direction: column;
     align-items: center;
     height: 1212px;
+    margin-top: 100px; ;
 }
 
 .title{
     text-align: center;
     color:   #152A3D;
     font-family: 'Mulish';
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 33px;
-    text-shadow: 1px 1px 0px 0px #00000059;
-    
-    
+
+
+text-shadow: 1px 1px 0px 0px #00000059;
+
+    margin-top:102px ;
 }
 .mapbg{  
     z-index: -5;
@@ -40,13 +43,14 @@
         height: 625px;
     }
     .title{
+    margin: 0;
+    margin-top: 30px;
     text-align: center;
  color:   #152A3D;
  font-family: 'Mulish';
 font-size: 24px;
 font-weight: 700;
 line-height: 33px;
-text-shadow: 1px 1px 0px 0px #00000059;
 width: 638px;
 }
 .map{
@@ -71,10 +75,11 @@ height: 625px;
         height: 365px;
     }
     .title{
+        margin-top: 25px;
 font-size: 16px;
 line-height: 30px;
 text-shadow: 1px 1px 0px 0px #00000059;
-width: 87vw;
+width: 80vw;
 }
 .mapbg{
   width: 100%;

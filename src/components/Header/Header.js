@@ -11,7 +11,7 @@ const Header = () => {
         <img src={logo} className={styles.logo} alt={"logo"} />
         <div className={styles.headermenu}>
           <div className={styles.headermenuNav}>Home</div>
-          <div className={styles.headermenuNav}>Contacts</div>
+          <div className={styles.headermenuNav}>About us</div>
           <button className={styles.headermenuBtn}>Contact us</button>
           <button className={styles.menuBtn}><img src={menu} alt="menu"/></button>
         </div>
@@ -26,7 +26,7 @@ const Header = () => {
           companies of all sizes. We can help you manage your full data
           life-cycle from retrieval to presentation.
         </span>
-        <button className={styles.infoBtn}>Consult today</button>
+        <button className={styles.infoBtn}>Consult</button>
       </div>
     </div>
   );

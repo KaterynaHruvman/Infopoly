@@ -49,18 +49,18 @@
 
 
 .img{
-    height: 329px;
+height: 385px;
 width: 100%;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 object-fit: cover;
-filter:grayscale(100%)
+/* filter:grayscale(100%) */
 
 }
-img:hover{
-    filter:grayscale(0%)
+/* img:hover{
+    filter:grayscale(0%) */
   
-}
+
 
 .theFront .name{
     margin: 0;
@@ -107,7 +107,7 @@ letter-spacing: 0em;
 
 }
 .bio{
-    margin-top: 50px;
+    margin-top: 30px;
     color: white;
     height: 144px;
 width: 209px;
@@ -287,12 +287,15 @@ letter-spacing: 0em;
 .bio{
     margin-top: 20px;
     color: white;
-    height: 144px;
 width: 75%;
 font-family: 'Mulish';
 font-size: 11px;
 font-weight: 300;
 line-height: 14.5px;
-letter-spacing: 0em;
+height: 98px;
+width: 108px;
+left: 178.5px;
+top: 1618px;
+
 }
 }

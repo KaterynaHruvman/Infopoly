@@ -69,7 +69,15 @@ height: 625px;
 
 
 }
-
+@media screen and (max-width: 1536px) {  
+  .map{
+    top: 112px;
+    left: 12.5vw;
+    width: 80%;
+    height: 70%;
+margin-bottom: 0;   
+}
+}
 @media screen and (max-width: 428px) {   
     .container {
         height: 365px;
@@ -89,7 +97,7 @@ height: 100%;
     top: 112px;
     left: 12.5vw;
     width: 80%;
-    height: 60%;
+    height: 70%;
 margin-bottom: 0;
 
 }

@@ -26,11 +26,11 @@ const Header = () => {
         <h1 className={styles.heading}>
           Experts in managing and manipulating data
         </h1>
-        <span className={styles.description}>
+        <p className={styles.description}>
           A highly skilled agency specialising in the management of data for
           companies of all sizes. We can help you manage your full data
           life-cycle from retrieval to presentation.
-        </span>
+        </p>
         
         <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
        

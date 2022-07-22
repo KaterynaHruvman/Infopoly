@@ -5,8 +5,7 @@
   background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
-  text-align: center;
+  padding-bottom: 20vw;  
 }
 
 .appbar{
@@ -16,6 +15,7 @@
   align-items: center;
   padding-bottom: 25px;
   padding-top: 25px;
+  
 }
 
 .logo {
@@ -35,93 +35,38 @@
 }
 
 .infoContainer{
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  margin-top: 90px;
+  padding-top: 25vw;
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
   color: #152A3D;
 }
 
 .heading {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 28px;
-  margin-bottom: 22px;
-  /* max-width: 300px; */
+  font-size: 7.5vw;
+  line-height: 9vw;
+  margin-bottom: 9vw;
 }
 
 .description {
-  font-size: 14px;
-  line-height: 16px;
-  /* max-width: 280px; */
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 5vw;
 }
 
 .btnGreen {
-  position: relative;
-  margin-top: 80px;
-  padding: 15px 50px;
+  display: block;
+  margin-top: 30vw;
+  padding: 10px 40px;
   border-radius: 55px;
   background-color: #07DA62;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 14px;
+  font-size: 5vw;
+  line-height: 6vw;
   text-align: center;
   color: #ffffff;
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.btnGreen::after {
-  background-color: #07DA62;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btnAnimated {
-  animation: moveInBottom 5s ease-out;
-  animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-  0% {
-      opacity: 0;
-      transform: translateY(30px);
-  }
-
-  100% {
-      opacity: 1;
-      transform: translateY(0px);
-  }
+  cursor: pointer;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -129,43 +74,28 @@
     padding-bottom: 120px;
   }
 
-  .infoContainer{
-    margin-top: 100px; 
-  }
-
   .logo {
-    height: 50px;
+    height: 60px;
     margin-right: 60px;
   }
   
   .menuSvg {
-    height: 20px;
-  } 
- 
-  .heading {
-    font-size: 27px;
-    line-height: 32px;
-    /* max-width: 310px; */
-    margin-bottom: 25px;
-  }
-  
-  .description {
-    font-size: 15px;
-    line-height: 18px;
-    /* max-width: 403px; */
-  }
-
-  .btnGreen {
-    margin-top: 90px;
+    height: 25px;
   }  
 }
 
 @media (min-width: 768px) { 
   .header{
     background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
-  }  
-  
+    padding-bottom: 100px; 
+  }    
  
+  .appbar{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+  }
+
   .menuBtn{
     display: none;
   }
@@ -197,21 +127,37 @@
     border-radius: 55px;
     background-color: #059042;
   }
-
+ 
   .infoContainer{
+   padding-top: 60px;
    text-align: left;
   }
 
   .heading {
     font-size: 28px;
     line-height: 36px;
-    max-width: 400px;
+    max-width: 320px;
+    margin-bottom: 20px;
   }
   
   .description {
     font-size: 14px;
     line-height: 16px;
     max-width: 355px;
+  }
+
+  .btnGreen {
+    display: block;
+    margin-top: 60px;
+    padding: 10px 40px;
+    border-radius: 55px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
   }
 }
 

@@ -1,24 +1,29 @@
+import { Link, NavLink } from 'react-router-dom';
+
+import Container from "../Container/Container";
+
 import styles from "./Header.module.css";
 
-import background from "../../assets/images/infoPoly_main_bg_desktop_1 1.png";
-import logo from "../../assets/images/infoPoly_logo 1.png";
-import menu from "../../assets/images/menu.png";
+import logo from "../../assets/images/infoPoly_logo.svg";
+import menu from "../../assets/images/menu.svg";
 const Header = () => {
   return (
-    <div className={styles.container}>
-      <img src={background} className={styles.background} alt={"background"} />
-      <div className={styles.topbar}>
-        <img src={logo} className={styles.logo} alt={"logo"} />
-        <div className={styles.headermenu}>
-          <div className={styles.headermenuNav}>Home</div>
-          <div className={styles.headermenuNav}>About us</div>
-          <button className={styles.headermenuBtn}>Contact us</button>
-          <button className={styles.menuBtn}><img src={menu} alt="menu"/></button>
+    <section className={styles.header}>
+      <Container>      
+        <div className={styles.appbar}>
+          <img src={logo} className={styles.logo} alt={"logo"} />
+          <div className={styles.headermenuNav}>
+            <NavLink className={styles.link} to='/'>Home</NavLink>
+            <NavLink className={styles.link} to='/'>About us</NavLink>
+            <button className={styles.headermenuBtn} type='button'>Contact us</button>
+          </div>
+            <button className={styles.menuBtn}>
+              <img className={styles.menuSvg} src={menu} height='16px' alt="menu"/>
+            </button>
         </div>
-      </div>
 
       <div className={styles.infoContainer}>
-        <h1 className={styles.text}>
+        <h1 className={styles.heading}>
           Experts in managing and manipulating data
         </h1>
         <span className={styles.description}>
@@ -26,9 +31,12 @@ const Header = () => {
           companies of all sizes. We can help you manage your full data
           life-cycle from retrieval to presentation.
         </span>
-        <button className={styles.infoBtn}>Consult</button>
+        
+        <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
+       
       </div>
-    </div>
+    </Container>
+      </section>
   );
 };
 

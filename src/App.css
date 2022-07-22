@@ -1,7 +1,90 @@
-button{
-    border: none;
-    cursor: pointer;
-}
+@font-face {
+    font-family: "Mulish";
+    font-weight: 900;
+    src: local("Mulish"),
+      url(./fonts/Mulish-Black.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Mulish";
+    font-weight: 700;
+    src: local("Mulish"),
+      url(./fonts/Mulish-Bold.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Mulish";
+    font-weight: 600;
+    src: local("Mulish"),
+      url(./fonts/Mulish-SemiBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Mulish";
+    font-weight: 400;
+    src: local("Mulish"),
+      url(./fonts/Mulish-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Mulish";
+    font-weight: 300;
+    src: local("Mulish"),
+      url(./fonts/Mulish-Light.ttf) format("truetype");
+  }
+
 .App{
+    font-family: "Mulish";
     overflow-x: hidden;
 }
+
+button {
+    border-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    /* padding: 0; */
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  h1,
+  h2,
+  h3,
+  span,
+  p {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }

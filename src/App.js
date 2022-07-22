@@ -1,20 +1,15 @@
-import Header from "./components/Header/Header";
+import { Routes, Route, HashRouter} from 'react-router-dom';
+
+import MainPage from './components/MainPage/MainPage';
+
 import './App.css'
-import OurServices from "./components/Ourservises/OurServices";
-import OurTeam from "./components/OurTeam/OurTeam";
-import Footer from "./components/Footer/Footer";
-import OurClient from "./components/OurClient/OurClient";
-import Map from "./components/Map/Map"
-import './App.css'
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <OurServices />
-      <Map />
-      <OurTeam />
-      <OurClient/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<MainPage/>}/>      
+      </Routes>    
     </div>
   );
 }

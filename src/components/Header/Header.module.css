@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
+  text-align: center;
 }
 
 .appbar{
@@ -50,13 +51,13 @@
   font-size: 25px;
   line-height: 28px;
   margin-bottom: 22px;
-  max-width: 280px;
+  /* max-width: 300px; */
 }
 
 .description {
   font-size: 14px;
   line-height: 16px;
-  max-width: 355px;
+  /* max-width: 280px; */
 }
 
 .btn:hover {
@@ -72,7 +73,6 @@
 .btnGreen {
   position: relative;
   margin-top: 80px;
-  align-self: flex-start;
   padding: 15px 50px;
   border-radius: 55px;
   background-color: #07DA62;
@@ -145,14 +145,14 @@
   .heading {
     font-size: 27px;
     line-height: 32px;
-    max-width: 310px;
+    /* max-width: 310px; */
     margin-bottom: 25px;
   }
   
   .description {
     font-size: 15px;
     line-height: 18px;
-    max-width: 403px;
+    /* max-width: 403px; */
   }
 
   .btnGreen {
@@ -160,13 +160,12 @@
   }  
 }
 
-@media (min-width: 768px) {  
-  .logo {
-    height: 60px;
-    margin-right: 60px;
-  }
+@media (min-width: 768px) { 
+  .header{
+    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+  }  
   
-
+ 
   .menuBtn{
     display: none;
   }
@@ -198,206 +197,23 @@
     border-radius: 55px;
     background-color: #059042;
   }
-}
 
-
-
-/* @media screen and (max-width: 768px) {
-.container {
-  height: 486px;
-  position: relative;
-  width: 100%
-}
-.background {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -5;
-  
-}
-.logo {
-height: 50px;
-width: 155px;
-margin-left: 60px;
-margin-top:40px
-
-
-}
-.topbar{
-  display: flex;
-  justify-content: flex-start;
-}
-.headermenu{
-  display: flex;
-  margin-top: 50px;
-  margin-left: 209px;
-}
-.headermenuNav{
-  margin-left: 0;
-  margin-right: 25px;
-  height: 18px;
-margin-top: 8px;
-font-family: 'Mulish';
-font-size: 18px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0em;
-color: #1F1534;
-}
-.headermenuNav:hover{
-  color: #1F1534;
-  font-weight: 700;
-}
-.headermenuBtn{
-  margin-left: 12.45px;
-  height: 31px;
-width: 114px;
-border-radius: 55px;
-background-color: #059042;
-;
-color: white;
-font-family: 'Mulish';
-font-size: 14px;
-font-weight: 700;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: center;
-}
-
-.infoContainer{
-  display: flex;
-  flex-direction: column;
-  width: 534px;
-  margin-top: 60px;
-  margin-left: 12.5%;
-}
-.text {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-color: #152A3D;
-  line-height: 30.5px;
-  width: 284px;
-  margin: 0;
-}
-.description {
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-family: 'Mulish';
-font-size: 14px;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-color: #152A3D;
-width: 320px;
-}
-
-.infoBtn{
-  height: 46px;
-width: 172px;
-border-radius: 55px;
-background-color: #07DA62;
-font-family: 'Mulish';
-font-size: 14px;
-font-weight: 700;
-line-height:26px;
-letter-spacing: 0em;
-text-align: center;
-color: white;
-}
-
-}
-@media screen and (max-width: 428px) {
-  .background{
-    width: 300%;
-    left: -150%;
+  .infoContainer{
+   text-align: left;
   }
-.logo {
-height: 30px;
-width: 38vw;
-margin-left: 20px;
-margin-top: 25px
+
+  .heading {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 400px;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 355px;
+  }
+}
 
 
-}
-.headermenu{
-  display: flex;
-  margin-top: 28px;
-  margin-left: 18vw;
-}
-.menuBtn{
-  display: inline;
-  margin-left: 20px;
-  background-color: transparent;
-}
-.headermenuNav{
- display: none;
-}
-.headermenuNav:hover{
-  color: #1F1534;
-  font-weight: 700;
-}
-.headermenuBtn{
-  margin-left: 0;
-  height: 25px;
-width: 30vw;
-border-radius: 55px;
-background-color: #059042;
-color: white;
-font-family: 'Mulish';
-font-size: 12px;
-font-weight: 700;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
-}
 
-.infoContainer{
-  display: flex;
-  flex-direction: column;
-  width: 196px;
-  margin-top: 60px;
-  margin-left: 12.5%;
-}
-.text {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: #152A3D;
-  line-height: 18px;
-  width: 178px;
-  margin: 0;
-}
-.description {
-  margin: 0;
-  margin-top: 22px;
-  margin-bottom: 25px;
-  font-family: 'Mulish';
-font-size: 12px;
-font-weight: 300;
-line-height: 15.5px;
-letter-spacing: 0em;
-text-align: left;
-color: #152A3D;
-width: 196px;
-}
-
-.infoBtn{
-  height: 26px;
-width: 116px;
-border-radius: 55px;
-background-color: #07DA62;
-font-family: 'Mulish';
-font-size: 12px;
-font-weight: 700;
-line-height:26px;
-letter-spacing: 0em;
-text-align: center;
-color: white;
-}
-
-} */

@@ -32,7 +32,7 @@ const OurServices = () => {
         <section className={styles.servicesWrapper}>
             <h1 className={styles.title}>Our IT services</h1>
             <p className={styles.text}>
-              We provide to you the best choices for you. Adjust it to your needs and make sure
+              We provide to you the best choices. Adjust it to your needs and make sure
               you get full lifecycle management from design, development, implementation and maintenance.
               We can help and advise the most suitable technology for your requirements.
             </p>

@@ -1,11 +1,11 @@
-.theCard{
-    min-width: 50%;
-    aspect-ratio : 1 / 1;
-    padding: 15px;
+.theCard {
+    /* min-width: 50%; */
+    /* aspect-ratio : 1 / 1;
+    */
     border-radius: 20px;
     font-family: 'Mulish';
     color: #152A3D;
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25)
+    /* box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25) */
 }
 
 .theFront {  
@@ -15,37 +15,46 @@
     justify-items: center;
 }
 
-.backDescription{
+.backDescription  {
     display: none;
 }
 
-.description{
+.description {
     display: none;
 }
 
 
-.theFront .title{ 
-    margin-top: 2vw;
+.theFront .title { 
+  margin-top: 2vw;
   font-weight: 700; 
   font-size: 3.5vw;
   line-height: 4vw;
   text-align: center;
 }
-/* .mainContainer{
-    position: relative;
-    height: 428px;
-    width: 317.5137939453125px;
-    border-radius: 20px;
-    margin: 18.71px;
-    cursor: pointer;
-    
-}
 
 .img{
-    height: 105px;
-    width: 105px;
-    margin-top: 40px;
+    height: 15vw;   
 }
+
+@media (min-width: 768px)  {
+    .theCard {
+        max-width: 145px;
+    }
+
+    .img{
+        height: 60px;   
+    }
+
+    .theFront .title { 
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+}
+  
+
+/* 
 .theFront{
     width: 100%;
     height: 100%;
@@ -217,4 +226,4 @@ letter-spacing: 0em;
 text-align: center;
 }
 
-} */
+} */ 

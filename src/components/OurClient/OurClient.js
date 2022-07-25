@@ -1,36 +1,29 @@
-import styles from './OurClient.module.css'
+import styles from './OurClient.module.css';
+import Container from '../Container/Container';
 // import { Swiper, SwiperSlide } from "swiper/react";
 
 import Marquee from "react-fast-marquee";
-import coeus from '../../assets/images/COEUS Solutions Logo CMYK 1.png'
-import trendelie from '../../assets/images/NEW TREND LOGO-2 1.png'
-import tabush from '../../assets/images/TabushGroupLogo-med.jpg'
+import coeus from '../../assets/images/clients/coeus_logo.png';
+import trendelie from '../../assets/images/clients/trendilize_logo.png';
+import tabush from '../../assets/images/clients/tabush_logo.png';
 
-// const OurClient = () => {
-//     return (
-//         <div className={styles.container}>
-            
-//             <h2 className={styles.title}> Our Clients</h2>
-
-//             <div className={styles.clients}>
-//                 <img src={coeus} className={styles.coeus} alt={"coeus"} />
-//                 <img src={trendelie} className={styles.trendelie} alt={"trendalise"} />
-//                 <img src={tabush} className={styles.tabush} alt={"tabush"}  />
-//               </div>
-//         </div>
-//     );
-// }
 
 const OurClient = () => {
     return (
+      <section className={styles.clientsWrapper}>
+<Container>
+<h1 className={styles.title}>Our Clients</h1>
+<div className={styles.marqueeWrapper}>
 
  <Marquee>
-      <a href="https://coeusconsultinggroup.com/"><img src={coeus} className={styles.coeus} alt={"coeus"} /></a>
-       <a href="https://www.trendilize.com/"> <img src={trendelie} className={styles.trendelie} alt={"trendalise"} /></a>
-          <a href="https://www.tabush.com"><img src={tabush} className={styles.tabush} alt={"tabush"}  /> </a>
+      <a href="https://coeusconsultinggroup.com/"><img src={coeus} className={styles.coeus + ' ' + styles.logo} alt={"coeus"} /></a>
+       <a href="https://www.trendilize.com/"> <img src={trendelie} className={styles.trendelie + ' ' + styles.logo} alt={"trendalise"} /></a>
+          <a href="https://www.tabush.com"><img src={tabush} className={styles.tabush + ' ' + styles.logo} alt={"tabush"}  /> </a>
 </Marquee>
-        
-         );
+</div>
+        </Container>
+        </section>
+   );
 }
 
 export default OurClient;

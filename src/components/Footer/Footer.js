@@ -1,10 +1,10 @@
 import styles from './Footer.module.css'
-import background from '../../assets/images/infoPoly_main_bg_desktop_1 2.png'
+// import background from '../../assets/images/infoPoly_main_bg_desktop_1 2.png'
 import logo from '../../assets/images/infoPoly_logo 1.png';
 const Footer = () => {
     return (
         <div className={styles.container}>
-            <img src={background} className={styles.background} alt="background" />
+            {/* <img src={background} className={styles.background} alt="background" /> */}
             <div className={styles.info}>
                 <img src={logo} className={styles.logo} alt="logo" />
                 <div className={styles.infoText}>

@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   font-family: 'Mulish';
+  color:#152A3D;
   padding: 20vw 0vw;
 }
 
@@ -11,6 +12,7 @@
   font-weight: 700;  
   font-size: 6vw;
   line-height: 8vw;
+  border-bottom: 2px solid  #152A3D;
 }
 
 .text{

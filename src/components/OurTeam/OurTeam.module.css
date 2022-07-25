@@ -1,20 +1,18 @@
-.container {
+.teamWrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  padding-bottom: 190px;
+  padding: 20vw 0vw;
+  font-family: 'Mulish';
+  color:#152A3D;
 }
 .title {
   margin: 0;
-  margin-bottom: 57.13px;
-  margin-top: 190px;
-  font-family: 'Mulish';
-font-size: 36px;
-font-weight: 700;
-line-height: 56px;
-letter-spacing: 0em;
- border-bottom: 2px solid black;
+  font-weight: 700;  
+  font-size: 6vw;
+  line-height: 8vw;
+  border-bottom: 2px solid  #152A3D;
 }
 .background{
   position: absolute;
@@ -23,37 +21,36 @@ letter-spacing: 0em;
 }
 .background2{
   position: absolute;
-bottom: 0;
+  bottom: 0;
   z-index: -5;
 }
+
 .navigation{
   display: flex;
-  margin-bottom: 33.27px;
 }
 
 .navigation >div{
-  margin-left: 19px;
-
-  font-family: 'Mulish';
-font-size: 24px;
-font-weight: 400;
-line-height: 56px;
-letter-spacing: 0em;
-cursor: pointer;
+  /* margin-left: 19px; */
+  margin-top: 8vw;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 4vw;
+  cursor: pointer;
 }
+
+.navigation >div:not(:last-child){
+  margin-right: 5px; 
+}
+
 .activeTab{
   font-weight: 700 bold;
-font-size: 24px;
+  font-size: 24px;
   border-bottom: 1px solid black;
 }
 .membersContainer{
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 .container {
   display: flex;
   flex-direction: column;
@@ -139,4 +136,4 @@ line-height: 13px;
   flex-wrap: wrap;
   width: 100vw;
 }
-}
+} */

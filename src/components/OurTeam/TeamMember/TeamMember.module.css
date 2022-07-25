@@ -1,13 +1,11 @@
 .mainContainer{
-    position: relative;
-    height: 509.0799560546875px;
-    width: 329px;
+    
     border-radius: 20px;
     margin: 42px;
     cursor: pointer;
     
 }
-
+/* 
 .theCard{
     position: absolute;
     width: 100%;
@@ -54,13 +52,9 @@ width: 100%;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 object-fit: cover;
-/* filter:grayscale(100%) */
+filter:grayscale(100%)
 
 }
-/* img:hover{
-    filter:grayscale(0%) */
-  
-
 
 .theFront .name{
     margin: 0;
@@ -175,11 +169,11 @@ width: 100%;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 object-fit: cover;
-/* filter:grayscale(100%) */
+filter:grayscale(100%)
 
 }
 img:hover{
-    /* filter:grayscale(0%) */
+    filter:grayscale(0%)
   
 }
 
@@ -298,4 +292,4 @@ left: 178.5px;
 top: 1618px;
 
 }
-}
+} */

@@ -23,13 +23,16 @@ import tabush from '../../assets/images/TabushGroupLogo-med.jpg'
 
 const OurClient = () => {
     return (
-
- <Marquee>
-      <a href="https://coeusconsultinggroup.com/"><img src={coeus} className={styles.coeus} alt={"coeus"} /></a>
+        <div className={styles.container}>
+  <h2 className={styles.title}> Our Clients</h2>
+    <div className={styles.clients}> 
+ <Marquee className={styles.marqueeontiner}>
+      <a  href="https://coeusconsultinggroup.com/"><img src={coeus} className={styles.coeus} alt={"coeus"} /></a>
        <a href="https://www.trendilize.com/"> <img src={trendelie} className={styles.trendelie} alt={"trendalise"} /></a>
           <a href="https://www.tabush.com"><img src={tabush} className={styles.tabush} alt={"tabush"}  /> </a>
 </Marquee>
-        
+            </div>     
+            </div>
          );
 }
 

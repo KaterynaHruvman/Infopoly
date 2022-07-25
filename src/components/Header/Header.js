@@ -6,9 +6,20 @@ import styles from "./Header.module.css";
 
 import logo from "../../assets/images/infoPoly_logo.svg";
 import menu from "../../assets/images/menu.svg";
+import ConsaltUs from '../Form/ConsaltUs';
+import { useState } from 'react';
+import BackGround from '../Form/Background';
 const Header = () => {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <section className={styles.header}>
+      {
+        showForm && <BackGround setShowForm={setShowForm}/>
+      }
+      {
+        showForm && <ConsaltUs/>
+      }
       <Container>      
         <div className={styles.appbar}>
           <img src={logo} className={styles.logo} alt={"logo"} />
@@ -32,7 +43,7 @@ const Header = () => {
           life-cycle from retrieval to presentation.
         </span>
         
-        <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
+        <button onClick={()=>setShowForm(prev=>!prev)} className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
        
       </div>
     </Container>

@@ -6,12 +6,8 @@
      position: relative;
      flex-direction: column;
 }
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
+
 
 .title{
      margin: 0;
@@ -21,6 +17,7 @@ font-weight: 700;
 line-height: 56px;
 letter-spacing: 0em;
 text-align: left;
+border-bottom: 2px solid black;
 
 }
 .clients{
@@ -29,7 +26,7 @@ text-align: left;
 .coeus{
     height: 129px;
     margin-top:160px;
-width: 475px;
+    width: 475px;
     margin-right: 130px;
     cursor: pointer;
 }
@@ -44,9 +41,11 @@ width: 475px;
      height: 129px;
     margin-top:160px;
     width: 475px;
+    height: 129px;
     margin-right: 130px;
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 768px){
 .container {

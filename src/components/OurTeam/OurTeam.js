@@ -35,11 +35,11 @@ const OurTeam = () => {
       <img className={styles.background} src={background} alt={'rectangle'}/>
       <img className={styles.background2} src={background2} alt={'rectangle'}/>
       <div className={styles.navigation}>
-        <div onClick={()=>setActiveTab('Founder')} className={activeTab==="Founder" && styles.activeTab}>Founders</div>
-        <div onClick={() => setActiveTab('Designer')} className={activeTab==="Designer" && styles.activeTab}>Designers</div>
-        <div onClick={() => setActiveTab('Developer')} className={activeTab==="Developer" && styles.activeTab}>Developers</div>
-        <div onClick={() => setActiveTab('Data Analyst')} className={activeTab === "Data Analyst" && styles.activeTab}>Data Analyst</div>
-         <div onClick={() => setActiveTab('Data Architect')} className={activeTab==="Data Architect" && styles.activeTab}>Data Architects</div>
+        <div onClick={()=>setActiveTab('Founder')} className={activeTab==="Founder" ? styles.activeTab : ''}>Founders</div>
+        <div onClick={() => setActiveTab('Designer')} className={activeTab==="Designer" ? styles.activeTab : ''}>Designers</div>
+        <div onClick={() => setActiveTab('Developer')} className={activeTab==="Developer" ? styles.activeTab : ''}>Developers</div>
+        <div onClick={() => setActiveTab('Data Analyst')} className={activeTab === "Data Analyst" ? styles.activeTab : ''}>Data Analyst</div>
+         <div onClick={() => setActiveTab('Data Architect')} className={activeTab==="Data Architect" ? styles.activeTab : ''}>Data Architects</div>
       </div>
       <div className={styles.membersContainer}>
         {

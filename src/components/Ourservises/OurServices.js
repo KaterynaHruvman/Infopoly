@@ -34,7 +34,7 @@ const OurServices = () => {
                 We can help and advise the most suitable technology for your requirements.</h5>
             <div className={styles.cardContainer}>
                 {serviceData.map(service => {
-                    return <ServiceCard service={service}/>
+                    return <ServiceCard key={service.id} service={service}/>
                 })
                 
                 }

@@ -60,13 +60,13 @@
 .infoContainer{
   width: 100%;
   padding-top: 25vw;
+  text-align: center;
   font-style: normal;
   color: #152A3D;
 }
 
 .heading {
-  font-weight: 700;
-  text-align: center;
+  font-weight: 700;  
   font-size: 7.5vw;
   line-height: 9vw;
   margin-bottom: 5vw;
@@ -74,7 +74,6 @@
 
 .description {
   font-weight: 300;
-  text-align: center;
   font-size: 4vw;
   line-height: 6vw;
 }
@@ -109,6 +108,11 @@
     display: flex;
     align-items: center;
   }
+
+  .infoContainer{
+    text-align: left;
+  }
+  
 
   .btnGreen {
     margin: 0;

@@ -1,11 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
-
 import Container from "../Container/Container";
-
-import styles from "./Header.module.css";
 
 import logo from "../../assets/images/infoPoly_logo.svg";
 import menu from "../../assets/images/menu.svg";
+
+import styles from "./Header.module.css";
+
 const Header = () => {
   return (
     <section className={styles.header}>
@@ -13,7 +13,7 @@ const Header = () => {
         <div className={styles.appbar}>
           <img src={logo} className={styles.logo} alt={"logo"} />
           <div className={styles.headermenuNav}>
-            <NavLink className={styles.link} to='/'>Home</NavLink>
+            <NavLink className={styles.link} style={({isActive})=>({color: isActive ? "152A3D": '5D9081', fontWeight: isActive ? "700": '300', pointerEvents: isActive ? "none" : ""})} to='/'>Home</NavLink>
             <NavLink className={styles.link} to='/'>About us</NavLink>
             <button className={styles.headermenuBtn} type='button'>Contact us</button>
           </div>

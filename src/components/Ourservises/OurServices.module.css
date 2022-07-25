@@ -1,49 +1,46 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 195px;
+.servicesWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Mulish';
+  padding-top: 20vw;
 }
 
-.title{
-    margin: 0;
-    font-family: 'Mulish';
-font-size: 36px;
-font-weight: 700;
-line-height: 56px;
-letter-spacing: 0em;
-
+.title{   
+  font-weight: 700;  
+  font-size: 6vw;
+  line-height: 8vw;
 }
+
 .text{
-    margin: 0;
-    margin-top: 60px;
-    margin-bottom: 80px;
-    width: 1142.4000244140625px;
-font-family: 'Mulish';
-font-size: 18px;
-font-weight: 300;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
-color: #7D7987;
-
-
+  margin-top: 4vw;
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 6vw;
+  text-align: center;
+  color: #7D7987;
 }
+
 .cardContainer{
-    display: flex;
-    width: 1436px;
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(2.3vw, 1fr);
+    grid-gap: 10px;
     justify-content: center;
 }
-@media screen and (max-width: 1450px){
+
+/* @media screen and (max-width: 1450px){
     .cardContainer{
         display: flex;
         width: 90%;
         flex-wrap: wrap;
     }
 
-}
+} */
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
 .container{
     display: flex;
     flex-direction: column;
@@ -126,4 +123,4 @@ color: #7D7987;
     flex-wrap: wrap;
 }
 
-}
+} */

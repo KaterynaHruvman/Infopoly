@@ -12,7 +12,7 @@ const OurClient = () => {
     return (
       <section className={styles.clientsWrapper}>
 <Container>
-<h1 className={styles.title}>Our Clients</h1>
+{/* <h1 className={styles.title}>Partners we are trusted by</h1> */}
 <div className={styles.marqueeWrapper}>
 
  <Marquee>

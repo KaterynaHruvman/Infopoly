@@ -7,17 +7,33 @@ import menu from "../../assets/images/menu.svg";
 import ConsaltUs from '../Form/ConsaltUs';
 import { useState } from 'react';
 import BackGround from '../Form/Background';
-
+import styles from './Header.module.css'
 const Header = () => {
   const [showForm, setShowForm] = useState(false);
-
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
   return (
     <section className={styles.header}>
       {
         showForm && <BackGround setShowForm={setShowForm}/>
       }
       {
-        showForm && <ConsaltUs/>
+        showForm && <ConsaltUs
+          setShowForm={setShowForm}
+          name={name}
+          setName={setName}
+          phone={phone}
+          setPhone={setPhone}
+          email={email}
+          setEmail={setEmail}
+          subject={subject}
+          setSubject={setSubject}
+          message={message}
+          setMessage={setMessage}
+        />
       }
       <Container>      
         <div className={styles.appbar}>

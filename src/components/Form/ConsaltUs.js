@@ -21,10 +21,14 @@ function ConsaltUs() {
   };
 
   return (
+    
 
     <form className={styles.form} ref={form} onSubmit={sendEmail}>
       <label htmlFor="name">Name</label>
       <input type="text" name="user_name" id="name"/>
+      <label htmlFor="phone">Phone</label>
+      <input type="number" name="user_phone" id="phone" />
+    
       <label htmlFor="email">Email</label>
       <input type="email" name="user_email" id="email" />
       <label>Subject</label>

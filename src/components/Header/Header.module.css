@@ -5,7 +5,7 @@
   background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 20vw;  
 }
 
 .appbar{
@@ -15,6 +15,7 @@
   align-items: center;
   padding-bottom: 25px;
   padding-top: 25px;
+  
 }
 
 .logo {
@@ -26,6 +27,29 @@
   display: none;
 }
 
+.link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #152A3D;
+}
+
+.link:not(:last-child){
+  margin-right: 25px;
+}
+
+.headermenuBtn{
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  border-style: none;
+  color: #FFFFFF;
+  border-radius: 55px;
+  background-color: #059042;
+}
+
 .menuBtn{
   border-style: none;
   background-color: transparent;
@@ -34,370 +58,128 @@
 }
 
 .infoContainer{
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  margin-top: 90px;
+  padding-top: 25vw;
+  text-align: center;
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
   color: #152A3D;
 }
 
 .heading {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 28px;
-  margin-bottom: 22px;
-  max-width: 280px;
+  font-weight: 700;  
+  font-size: 7.5vw;
+  line-height: 9vw;
+  margin-bottom: 5vw;
 }
 
 .description {
-  font-size: 14px;
-  line-height: 16px;
-  max-width: 355px;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 6vw;
 }
 
 .btnGreen {
-  position: relative;
-  margin-top: 80px;
-  align-self: flex-start;
-  padding: 15px 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30vw;
+  padding: 10px 40px;
   border-radius: 55px;
   background-color: #07DA62;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 14px;
+  font-size: 5vw;
+  line-height: 6vw;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.btnGreen::after {
-  background-color: #07DA62;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btnAnimated {
-  animation: moveInBottom 5s ease-out;
-  animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-  0% {
-      opacity: 0;
-      transform: translateY(30px);
+@media (min-width: 768px)  {
+  .appbar{
+    padding-bottom: 30px;
+    padding-top: 30px;    
   }
-
-  100% {
-      opacity: 1;
-      transform: translateY(0px);
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .header{
-    padding-bottom: 120px;
-  }
-
-  .infoContainer{
-    margin-top: 100px; 
-  }
-
-  .logo {
-    height: 50px;
-    margin-right: 60px;
-  }
-  
-  .menuSvg {
-    height: 20px;
-  } 
- 
-  .heading {
-    font-size: 27px;
-    line-height: 32px;
-    max-width: 310px;
-    margin-bottom: 25px;
-  }
-  
-  .description {
-    font-size: 15px;
-    line-height: 18px;
-    max-width: 403px;
-  }
-
-  .btnGreen {
-    margin-top: 90px;
-  }  
-}
-
-@media (min-width: 768px) {  
-  .logo {
-    height: 60px;
-    margin-right: 60px;
-  }
-  
 
   .menuBtn{
     display: none;
   }
 
-  .headermenuNav{
+   .headermenuNav{
     display: flex;
     align-items: center;
   }
+
+  .infoContainer{
+    text-align: left;
+  }
   
-  .link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: #152A3D;
+
+  .btnGreen {
+    margin: 0;
+  }
+  
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) { 
+  .header{
+    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+    padding-bottom: 80px; 
+  }      
+  
+  .infoContainer{
+   padding-top: 60px;
   }
 
-  .link:not(:last-child){
-    margin-right: 25px;
+  .heading {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 340px;
+    margin-bottom: 20px
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 500px;
   }
 
-  .headermenuBtn{
-    padding: 10px 21px;
-    font-weight: 700;
+  .btnGreen {
+    margin-top: 60px;
     font-size: 16px;
-    line-height: 16px;
-    border-style: none;
-    color: #FFFFFF;
-    border-radius: 55px;
-    background-color: #059042;
+    line-height: 12px;
   }
 }
 
+@media (min-width: 1200px) { 
+  .header{
+    background-image: url('../../assets/images/header/infoPoly_main_bg_desktop.png');
+    padding-bottom: 100px; 
+  }  
 
+  .infoContainer{
+   padding-top: 70px;
+  }
 
-/* @media screen and (max-width: 768px) {
-.container {
-  height: 486px;
-  position: relative;
-  width: 100%
-}
-.background {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -5;
+  .heading {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 340px;
+    margin-bottom: 20px
+  }
   
-}
-.logo {
-height: 50px;
-width: 155px;
-margin-left: 60px;
-margin-top:40px
-
-
-}
-.topbar{
-  display: flex;
-  justify-content: flex-start;
-}
-.headermenu{
-  display: flex;
-  margin-top: 50px;
-  margin-left: 209px;
-}
-.headermenuNav{
-  margin-left: 0;
-  margin-right: 25px;
-  height: 18px;
-margin-top: 8px;
-font-family: 'Mulish';
-font-size: 18px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0em;
-color: #1F1534;
-}
-.headermenuNav:hover{
-  color: #1F1534;
-  font-weight: 700;
-}
-.headermenuBtn{
-  margin-left: 12.45px;
-  height: 31px;
-width: 114px;
-border-radius: 55px;
-background-color: #059042;
-;
-color: white;
-font-family: 'Mulish';
-font-size: 14px;
-font-weight: 700;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: center;
-}
-
-.infoContainer{
-  display: flex;
-  flex-direction: column;
-  width: 534px;
-  margin-top: 60px;
-  margin-left: 12.5%;
-}
-.text {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-color: #152A3D;
-  line-height: 30.5px;
-  width: 284px;
-  margin: 0;
-}
-.description {
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-family: 'Mulish';
-font-size: 14px;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-color: #152A3D;
-width: 320px;
-}
-
-.infoBtn{
-  height: 46px;
-width: 172px;
-border-radius: 55px;
-background-color: #07DA62;
-font-family: 'Mulish';
-font-size: 14px;
-font-weight: 700;
-line-height:26px;
-letter-spacing: 0em;
-text-align: center;
-color: white;
-}
-
-}
-@media screen and (max-width: 428px) {
-  .background{
-    width: 300%;
-    left: -150%;
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 500px;
   }
-.logo {
-height: 30px;
-width: 38vw;
-margin-left: 20px;
-margin-top: 25px
-
-
-}
-.headermenu{
-  display: flex;
-  margin-top: 28px;
-  margin-left: 18vw;
-}
-.menuBtn{
-  display: inline;
-  margin-left: 20px;
-  background-color: transparent;
-}
-.headermenuNav{
- display: none;
-}
-.headermenuNav:hover{
-  color: #1F1534;
-  font-weight: 700;
-}
-.headermenuBtn{
-  margin-left: 0;
-  height: 25px;
-width: 30vw;
-border-radius: 55px;
-background-color: #059042;
-color: white;
-font-family: 'Mulish';
-font-size: 12px;
-font-weight: 700;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: center;
+  .btnGreen {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 12px;
+  }
 }
 
-.infoContainer{
-  display: flex;
-  flex-direction: column;
-  width: 196px;
-  margin-top: 60px;
-  margin-left: 12.5%;
-}
-.text {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: #152A3D;
-  line-height: 18px;
-  width: 178px;
-  margin: 0;
-}
-.description {
-  margin: 0;
-  margin-top: 22px;
-  margin-bottom: 25px;
-  font-family: 'Mulish';
-font-size: 12px;
-font-weight: 300;
-line-height: 15.5px;
-letter-spacing: 0em;
-text-align: left;
-color: #152A3D;
-width: 196px;
-}
 
-.infoBtn{
-  height: 26px;
-width: 116px;
-border-radius: 55px;
-background-color: #07DA62;
-font-family: 'Mulish';
-font-size: 12px;
-font-weight: 700;
-line-height:26px;
-letter-spacing: 0em;
-text-align: center;
-color: white;
-}
 
-} */

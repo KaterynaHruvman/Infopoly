@@ -1,14 +1,13 @@
 import { Link, NavLink } from 'react-router-dom';
-
 import Container from "../Container/Container";
-
-import styles from "./Header.module.css";
 
 import logo from "../../assets/images/infoPoly_logo.svg";
 import menu from "../../assets/images/menu.svg";
+
 import ConsaltUs from '../Form/ConsaltUs';
 import { useState } from 'react';
 import BackGround from '../Form/Background';
+
 const Header = () => {
   const [showForm, setShowForm] = useState(false);
 
@@ -24,7 +23,7 @@ const Header = () => {
         <div className={styles.appbar}>
           <img src={logo} className={styles.logo} alt={"logo"} />
           <div className={styles.headermenuNav}>
-            <NavLink className={styles.link} to='/'>Home</NavLink>
+            <NavLink className={styles.link} style={({isActive})=>({color: isActive ? "152A3D": '5D9081', fontWeight: isActive ? "700": '300', pointerEvents: isActive ? "none" : ""})} to='/'>Home</NavLink>
             <NavLink className={styles.link} to='/'>About us</NavLink>
             <button className={styles.headermenuBtn} type='button'>Contact us</button>
           </div>
@@ -37,11 +36,11 @@ const Header = () => {
         <h1 className={styles.heading}>
           Experts in managing and manipulating data
         </h1>
-        <span className={styles.description}>
+        <p className={styles.description}>
           A highly skilled agency specialising in the management of data for
           companies of all sizes. We can help you manage your full data
           life-cycle from retrieval to presentation.
-        </span>
+        </p>
         
         <button onClick={()=>setShowForm(prev=>!prev)} className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
        

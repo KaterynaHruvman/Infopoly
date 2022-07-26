@@ -3,12 +3,12 @@ import styles from './ServiceCard.module.css'
 const ServiceCard = (props) => {
     const { img, title, description } = props.service;
     return (
-        <div className={styles.mainContainer}>
+        
             <div className={styles.theCard}>
                 <div className={styles.theFront}>
                     <img src={img} className={styles.img} alt={img} />
-                    <h1 className={styles.title}>{title}</h1>
-                    <h2 className={styles.description}>{description}</h2>
+                    <span className={styles.title}>{title}</span>
+                    <span className={styles.description}>{description}</span>
                 </div>
                 <div className={styles.theBack}>
                     {/* <h1 className={styles.name}>{name}</h1>
@@ -16,7 +16,7 @@ const ServiceCard = (props) => {
                     <span className={styles.backDescription}>{description}</span>
                 </div>
             </div>
-       </div>
+      
     )
 }
 

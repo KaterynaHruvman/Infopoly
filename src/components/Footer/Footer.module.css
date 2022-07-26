@@ -1,235 +1,136 @@
-.container {
-    display: flex;
-    position: relative;
-    height: 463px;
-    margin-top: 100px;
+.footer {
+  background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20vw;
+  padding-bottom: 10vw;
+  font-family: 'Mulish';
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 6vw;
+  color:#152A3D;
 }
 
-.background{
-    position: absolute;
-    top: 0;
-    z-index: -5;
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 113px;
-    margin-left: 240px;
-}
-
-.logo{
-    height: 77px;
-    width: 240px;
-}
-
-.infoText{
-    margin: 0;
-    margin-top:18px;
-    height: 128px;
-    width: 469.20001220703125px;
-font-family: 'Mulish';
-font-size: 21px;
-font-weight: 300;
-line-height: 32px;
-letter-spacing: 0em;
-text-align: left;
-color: #7D7987;
-}
-
-.policy{
-    font-family: 'Mulish';
-font-size: 16px;
-font-weight: 300;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-color: #696767;
-margin-top: 14px;
-}
-
-.navigation{
-    height: 100%;
-    display: flex;
-}
-
-.company, .region, .help{
+.wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 140px;
 }
 
-.company{
-    margin-left: 230px;
+.wrapper span {
+    display: block;
 }
 
-.region{
-    margin-left: 117px;
-}
-
-.help{
-    margin-left: 140px;
-}
-
-.companyTitle, .regionTitle, .helpTitle{
-    font-family: 'Mulish';
-font-size: 20px;
-font-weight: 700;
-line-height: 60px;
-letter-spacing: 0em;
-text-align: left;
-color: #696767;
-margin-bottom: 2px;
-}
-
-.companyNav, .regionNav, .helpNav{
-    font-family: 'Mulish';
-font-size: 18px;
-font-weight: 300;
-line-height: 38px;
-letter-spacing: 0em;
-text-align: left;
-cursor: pointer;
-color: #696767;
-}
-
-@media screen and (max-width: 768px){
-.container {
+.navigation {
     display: flex;
-    position: relative;
-    height: 330px;
-    margin-top: 100px;
+    justify-content: space-around;
+    margin-top: 8vw;  
 }
 
-.background{
-    position: absolute;
-    top: 0;
-    z-index: -5;
-    height: 100%;
+.logo {
+    height: 10vw;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 57px;
-    margin-left: 60px;
+.infoText {
+    margin-top: 4vw;  
 }
 
-.logo{
-    height: 31px;
-    width: 96px;
+.title {
+    margin-bottom: 2vw;
 }
 
-.infoText{
-    margin: 0;
-    margin-top:18px;
-    height: 128px;
-    width: 187px;
-font-family: 'Mulish';
-font-size: 12px;
-font-weight: 300;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-color: #7D7987;
+.policy {
+    align-self: flex-start;
+    margin-top: 20vw; 
 }
 
-.policy{
-    font-family: 'Mulish';
-font-size: 12px;
-font-weight: 300;
-line-height: 18.5px;
-letter-spacing: 0em;
-text-align: left;
-color: #696767;
-margin-top: 6px;
-}
 
-.navigation{
-    height: 100%;
-    display: flex;
-}
+@media (min-width: 768px)  {
+    .footer {
+        background-image: url('../../assets/images/footer/infoPoly_footer_bg_tablet.jpg');
+        padding-top: 80px;
+        padding-bottom: 40px;
+        font-size: 14px;
+        line-height: 22px;
+   }
 
-.company, .region, .help{
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-}
+   .wrapper {
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
 
-.company{
-    margin-left: 155px;
-}
-
-.region{
-    margin-left: 23px;
-}
-
-.help{
-    margin-left: 23px;
-}
-
-.companyTitle, .regionTitle, .helpTitle{
-    font-family: 'Mulish';
-font-size: 14px;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: left;
-color: #696767;
-margin-bottom: 2px;
-}
-
-.companyNav, .regionNav, .helpNav{
-    font-family: 'Mulish';
-font-size: 14px;
-font-weight: 300;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-cursor: pointer;
-color: #696767;
-
-}
-}
-@media screen and (max-width: 428px){
-.container {
+    }
     
-    height: 218px;
-    margin-top: 0;
-}
+    .logo {
+       height: 40px;
+    }
 
-.background{
-}
+    .infoText {
+        margin-top: 20px;  
+    }
+    
+    .title {
+        margin-bottom: 10px;
+    }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 22px;
-    margin-left: 6.25vw;
-}
+    .navigation {
+        margin: 0;  
+    }
 
-.logo{
-    height: 27px;
-    width: 84px;
-}
+    .company,
+    .region {
+        margin-right: 20px;
+    }
 
-.infoText{
-    margin: 0;
-    margin-top: 20px;
-    width: 87vw;
-font-size: 11px;
-line-height: 15px;
-height: 76px;
 
-}
+    .info {
+        width: 40%;
+    }
 
-.policy{
-font-size: 12px;
-line-height: 15px;
-margin-top: 33px;
+    .policy {
+        margin-top: 50px; 
+    }
+  
 }
+  
 
-.navigation{
-    display: none;
-}
+@media (min-width: 1200px) { 
+     .footer {
+        background-image: url('../../assets/images/footer/infoPoly_footer_bg_desktop.jpg');
+        padding-top: 100px;
+        padding-bottom: 40px;
+        
+   }
+
+ 
+    .logo {
+       height: 40px;
+    }
+
+    .infoText {
+        margin-top: 20px;  
+    }
+    
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .navigation {
+        margin: 0;  
+    }
+
+    .company,
+    .region {
+        margin-right: 20px;
+    }
+
+
+    .info {
+        width: 40%;
+    }
+
+    .policy {
+        margin-top: 50px; 
+    }
+  
 }

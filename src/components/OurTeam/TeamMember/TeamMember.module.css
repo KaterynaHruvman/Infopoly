@@ -1,19 +1,81 @@
-.mainContainer{
-    
-    border-radius: 20px;
-    margin: 42px;
-    cursor: pointer;
-    
-}
-/* 
-.theCard{
-    position: absolute;
+.theCard img{
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
-    transition: all 1.5s ease;
-    border-radius: 20px;
+} 
+
+.theCard {   
+   margin-top: 4vw;   
 }
+
+.theFront {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imgWrapper {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5vw;
+    background-color: #9BFFC7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    font-weight: 700; 
+    font-size: 3vw;
+    line-height: 4vw;
+    text-align: center;
+}
+
+.jobTitle {
+    font-weight: 300; 
+    margin-top: 3vw;
+}
+
+.bio {
+    display: none;
+}
+
+
+@media (min-width: 768px)  {
+    
+    .theCard {   
+        margin-top: 30px;   
+        max-width: 350px;
+   }
+
+    .theFront .title { 
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .label {        
+        padding: 20px;       
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .jobTitle {
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+
+
+/* 
 
 .theCard:hover{
     transform: rotateY(180deg);

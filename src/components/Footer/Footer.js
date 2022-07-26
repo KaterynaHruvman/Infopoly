@@ -1,40 +1,45 @@
 import styles from './Footer.module.css'
-// import background from '../../assets/images/infoPoly_main_bg_desktop_1 2.png'
 import logo from '../../assets/images/infoPoly_logo 1.png';
+import Container from '../Container/Container';
 const Footer = () => {
     return (
-        <div className={styles.container}>
-            {/* <img src={background} className={styles.background} alt="background" /> */}
-            <div className={styles.info}>
-                <img src={logo} className={styles.logo} alt="logo" />
-                <div className={styles.infoText}>
-                    A highly skilled agency specialising in the management of data for companies 
-                    of all sizes. We can help you manage your full data life-cycle from retrieval 
-                    to presentation.
+        <section className={styles.footer}>
+           <Container>
+               <div className={styles.wrapper}>
+                   <div className={styles.info}>
+                       <img src={logo} className={styles.logo} alt="logo" />
+                       <p className={styles.infoText}>
+                           A highly skilled agency specialising in the management of data for companies 
+                           of all sizes. We can help you manage your full data life-cycle from retrieval 
+                           to presentation.
+                       </p>                
+                    </div>
+
+                    <div className={styles.navigation}> 
+                        <div className={styles.company}>
+                            <h3 className={styles.title}>Company</h3>
+                            <span className={styles.companyNav}>About</span>
+                        </div>
+
+                        <div className={styles.region}>
+                           <h3 className={styles.title}>Region</h3>
+                           <span className={styles.regionNav}>United Kingdom</span>
+                           <span className={styles.regionNav}>Australia</span>
+                           <span className={styles.regionNav}>Ukraine</span>
+                           <span className={styles.regionNav}>Sri Lanka</span>
+                        </div>
+
+                        <div className={styles.help}>
+                            <h3 className={styles.title}>Help</h3>
+                            <span className={styles.helpNav}>Contact support</span> 
+                        </div>
+                   </div>
                 </div>
-                <div className={styles.policy}>©InfoPoly LTD 2020. All rights reserved</div>
-            </div>
-            <div className={styles.navigation}>
-                <div className={styles.company}>
-                    <div className={styles.companyTitle}>Company</div>
-                    <div className={styles.companyNav}>About</div>
-                </div>
-                <div className={styles.region}>
-                    <div className={styles.regionTitle}>Region</div>
-                    <div className={styles.regionNav}>United Kingdom</div>
-                    <div className={styles.regionNav}>Australia</div>
-                    <div className={styles.regionNav}>Ukraine</div>
-                    <div className={styles.regionNav}>Sri Lanka</div>
-                </div>
-                <div className={styles.help}>
-                    <div className={styles.helpTitle}>Help</div>
-                    {/* <div className={styles.helpNav}>Help center</div> */}
-                    <div className={styles.helpNav}>Contact support</div> 
-                    {/* <div className={styles.helpNav}>Instruction</div> 
-                    <div className={styles.helpNav}>How it works</div>  */}
-                </div>
-            </div>
-        </div>
+            <span className={styles.policy}>©InfoPoly LTD 2020. All rights reserved</span>
+
+            
+           </Container>
+        </section>
     )
 }
 

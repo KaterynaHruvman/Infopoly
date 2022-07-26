@@ -1,28 +1,25 @@
-.teamWrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.team {    
+  width: 100%;
   padding: 20vw 0vw;
   font-family: 'Mulish';
   color:#152A3D;
+  background-image: url('../../assets/images/team/rectangle_1.svg'), url('../../assets//images/team//rectangle_2.svg');
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
 }
+
+.teamWrapper {   
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
 .title {
-  margin: 0;
   font-weight: 700;  
   font-size: 6vw;
   line-height: 8vw;
   border-bottom: 2px solid  #152A3D;
-}
-.background{
-  position: absolute;
-  top: 0;
-  z-index: -5;
-}
-.background2{
-  position: absolute;
-  bottom: 0;
-  z-index: -5;
 }
 
 .navigation{
@@ -30,7 +27,6 @@
 }
 
 .navigation >div{
-  /* margin-left: 19px; */
   margin-top: 8vw;
   font-weight: 300;
   font-size: 3vw;
@@ -48,7 +44,56 @@
   border-bottom: 1px solid black;
 }
 .membersContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+@media (min-width: 768px)  {
+  .team{
+    background-image: url('../../assets/images/team/rectangle_1_tablet.svg'), url('../../assets//images/team/rectangle_2_tablet.svg');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;  
+    padding: 80px 0px;
+ }
+
+  .membersContainer{
+    flex-direction: row;
+  }
+
+  .title{   
+    font-size: 26px;
+    line-height: 28px;
+}
+  
+
+  .navigation >div {
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+ 
+  .navigation >div:not(:last-child){
+    margin-right: 10px; 
+  }
+  
+}
+
+
+@media (min-width: 1200px) { 
+  .team{
+    background-image: url('../../assets//images/team/rectangle_1_desk.svg'), url('../../assets/images/team/rectangle_2_desk.svg');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;  
+    padding: 100px 0px;
+  } 
+}
+
+
+
 
 /* @media screen and (max-width: 768px) {
 .container {

@@ -42,11 +42,9 @@
     }
     
     .logo {
-        height: 70px;
-        margin-right: 40px;
+        height: 60px;
     } 
-}
-  
+}  
 
 @media (min-width: 1200px) { 
     .clientsWrapper{
@@ -55,6 +53,9 @@
 
     .marqueeWrapper{
         margin-top: 60px;    
-    }
-  
+    }  
+
+    .logo {
+        margin-right: 60px;
+    } 
 }

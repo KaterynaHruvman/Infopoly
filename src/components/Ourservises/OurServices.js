@@ -17,7 +17,7 @@ const OurServices = () => {
             </p>
             <div className={styles.cardContainer}>
                 {serviceData.map(service => {
-                    return <ServiceCard service={service}/>
+                    return <ServiceCard key={service.id} service={service}/>
                 })
                 
                 }

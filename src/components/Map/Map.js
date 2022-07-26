@@ -10,7 +10,7 @@ const Map = () => {
             <h2 className={styles.title}>Our company has united international team all around the world </h2>
             
             <div className={styles.mapWrapper} >
-            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_dsb4lxqn.json"  background="transparent" speed="1" loop
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_rcxmtcew.json"   background="transparent" speed="1" loop
                 autoplay></lottie-player>
             </div>
               

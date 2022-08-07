@@ -8,6 +8,7 @@ import ConsaltUs from '../Form/ConsaltUs';
 import { useState } from 'react';
 import BackGround from '../Form/Background';
 import styles from './Header.module.css'
+import MenuComponent from '../Menu/Menu';
 const Header = () => {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState('')
@@ -43,9 +44,11 @@ const Header = () => {
             <NavLink className={styles.link} to='/'>About us</NavLink>
             <button className={styles.headermenuBtn} type='button'>Contact us</button>
           </div>
-            <button className={styles.menuBtn}>
-              <img className={styles.menuSvg} src={menu} height='16px' alt="menu"/>
-            </button>
+         
+        <MenuComponent   className={styles.menuBtn} img={menu}/> 
+       
+        
+    
         </div>
 
       <div className={styles.infoContainer}>

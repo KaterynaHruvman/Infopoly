@@ -94,6 +94,12 @@
   cursor: pointer;
 }
 
+@media (min-width: 428px)  {
+  .menuBtn{
+    display: none;
+  }
+  
+}
 @media (min-width: 768px)  {
   .appbar{
     padding-bottom: 30px;

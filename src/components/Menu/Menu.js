@@ -3,7 +3,7 @@ import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-
+import styles from './Menu.module.css'
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -54,7 +54,7 @@ export default function MenuComponent({img}) {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Button
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
@@ -65,6 +65,7 @@ export default function MenuComponent({img}) {
         onClick={handleClick}
         sx={{
             backgroundColor: 'transparent'
+
         }}
       >
         <img src={img} alt="icon"/>
@@ -77,9 +78,7 @@ export default function MenuComponent({img}) {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        sx={{
-            backgroundColor: 'transparent'
-        }}
+        
       >
         <MenuItem onClick={handleClose} disableRipple
         

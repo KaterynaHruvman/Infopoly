@@ -1,0 +1,10 @@
+.container{
+    
+}
+
+@media (min-width: 428px)  {
+    .container{
+      display: none;
+    }
+    
+  }

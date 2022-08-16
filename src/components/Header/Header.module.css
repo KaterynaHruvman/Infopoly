@@ -55,6 +55,7 @@
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  margin-top: 500px;
 }
 
 .infoContainer{
@@ -98,7 +99,21 @@
   .menuBtn{
     display: none;
   }
+  .headermenuNav{
+    display: block;
+  }
   
+}
+@media (min-width: 428px) and (max-width: 534px)  {
+  .headermenuNav button{
+    
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+  .headermenuNav a{
+    margin-right: 10px !important;
+    font-size: 13px;
+  }
 }
 @media (min-width: 768px)  {
   .appbar{

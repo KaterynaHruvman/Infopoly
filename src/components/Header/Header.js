@@ -16,6 +16,7 @@ const Header = () => {
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+  console.log('window.innerWidth');
   return (
     <section className={styles.header}>
       {
@@ -45,7 +46,8 @@ const Header = () => {
             <button className={styles.headermenuBtn} type='button'>Contact us</button>
           </div>
          
-        <MenuComponent   className={styles.menuBtn} img={menu}/> 
+          <MenuComponent img={menu}/> 
+        
        
         
     

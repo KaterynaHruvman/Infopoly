@@ -1,95 +1,57 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import styles from './Menu.module.css'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import menuIcon from '../../assets/images/menu.png';
+import styles from './Menu.module.css';
+import { Link } from 'react-router-dom';
 
-const StyledMenu = styled((props) => (
-  <Menu
-    elevation={0}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'right',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'right',
-    }}
-   
-    {...props}
-  />
-))(({ theme }) => ({
-    '& .MuiPaper-root': {
-        borderRadius: 6,
-        marginTop: theme.spacing(1),
-        minWidth: 180,
-    
-        '& .MuiMenu-list': {
-            padding: '4px 0',
-        },
-        '& .MuiMenuItem-root': {
-            '& .MuiSvgIcon-root': {
-                fontSize: 18,
-                color: theme.palette.text.secondary,
-                marginRight: theme.spacing(1.5),
-            },
-            '&:active': {
-                
-                    backgroundColor: 'transparent'
-                
-            },
-        },
-    },  
-}));
+export default function Menu() {
+  const [state, setState] = React.useState({
+    right: false,
+  });
 
-export default function MenuComponent({img}) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setState({ ...state, [anchor]: open });
   };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        {['Home', 'About us', 'Contact us'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <Link to={text.toLowerCase().split(' ').join('')}>{text}</Link>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
 
   return (
-    <div className={styles.container}>
-      <Button
-        id="demo-customized-button"
-        aria-controls={open ? 'demo-customized-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        variant="contained"
-        disableElevation
-        onClick={handleClick}
-        sx={{
-            backgroundColor: 'transparent'
-
-        }}
-      >
-        <img src={img} alt="icon"/>
-      </Button>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          'aria-labelledby': 'demo-customized-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        
-      >
-        <MenuItem onClick={handleClose} disableRipple
-        
-        >
-         About Us
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          Contacts
-        </MenuItem>
-       
-      </StyledMenu>
+    <div>
+        <React.Fragment >
+          <img className={styles.menuIcon} src={menuIcon} alt="menuIcon" onClick={toggleDrawer('right', true)}/>
+          <Drawer
+            anchor={'right'}
+            open={state['right']}
+            onClose={toggleDrawer('right', false)}
+          >
+            {list('right')}
+          </Drawer>
+        </React.Fragment>
+      
     </div>
   );
 }

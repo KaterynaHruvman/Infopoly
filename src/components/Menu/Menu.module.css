@@ -1,9 +1,9 @@
-.container{
-    
+.menuIcon{
+    display: block;
 }
 
 @media (min-width: 428px)  {
-    .container{
+    .menuIcon{
       display: none;
     }
     

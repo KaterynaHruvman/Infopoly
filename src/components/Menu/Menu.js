@@ -24,15 +24,17 @@ export default function Menu() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width:  '50vw', height: '100%', background: 'white'}}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List sx={{width: '100%', paddingTop: 2}}>
         {['Home', 'About us', 'Contact us'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <Link to={text.toLowerCase().split(' ').join('')}>{text}</Link>
+          <ListItem key={text} disablePadding sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+            <Link to={text.toLowerCase().split(' ').join('')} 
+              style={{lineHeight: 2, color: '#059042', fontWeight: 'bold'}}
+            >{text}</Link>
           </ListItem>
         ))}
       </List>

@@ -1,7 +1,10 @@
 const AboutUs = ()=>{
     return (
         <div >
-            About us
+            
+           Info – information
+           Poly – polymorphism
+ 
         </div>
     )
 }

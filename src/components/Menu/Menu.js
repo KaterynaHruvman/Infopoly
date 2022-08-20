@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import menuIcon from '../../assets/images/menu.png';
+import menuIcon from '../../assets/images/menu.svg';
 import styles from './Menu.module.css';
 import { Link } from 'react-router-dom';
 
@@ -42,18 +42,19 @@ export default function Menu() {
   );
 
   return (
-    <div>
-        <React.Fragment >
-          <img className={styles.menuIcon} src={menuIcon} alt="menuIcon" onClick={toggleDrawer('right', true)}/>
-          <Drawer
-            anchor={'right'}
-            open={state['right']}
-            onClose={toggleDrawer('right', false)}
-          >
-            {list('right')}
-          </Drawer>
-        </React.Fragment>
-      
-    </div>
+      <div className={styles.headermenu}>
+          <React.Fragment>
+              <button className={styles.menuBtn} onClick={toggleDrawer("right", true)}>
+                  <img
+                      className={styles.menuIcon}
+                      src={menuIcon}
+                      alt="menuIcon"                      
+                  />
+              </button>
+              <Drawer anchor={"right"} open={state["right"]} onClose={toggleDrawer("right", false)}>
+                  {list("right")}
+              </Drawer>
+          </React.Fragment>
+      </div>
   );
 }

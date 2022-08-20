@@ -27,6 +27,7 @@
   display: none;
 }
 
+
 .link {
   text-decoration: none;
   font-weight: 400;
@@ -96,24 +97,13 @@
 }
 
 @media (min-width: 428px)  {
-  .menuBtn{
+  /* .menuBtn{
     display: none;
-  }
-  .headermenuNav{
-    display: block;
-  }
+  } */
   
 }
 @media (min-width: 428px) and (max-width: 534px)  {
-  .headermenuNav button{
-    
-    font-size: 12px;
-    padding: 5px 12px;
-  }
-  .headermenuNav a{
-    margin-right: 10px !important;
-    font-size: 13px;
-  }
+ 
 }
 @media (min-width: 768px)  {
   .appbar{
@@ -121,13 +111,19 @@
     padding-top: 30px;    
   }
 
-  .menuBtn{
-    display: none;
-  }
-
-   .headermenuNav{
+  .headermenuNav{
     display: flex;
     align-items: center;
+  }
+
+  .headermenuNav button {    
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+  
+  .headermenuNav a{
+    margin-right: 10px !important;
+    font-size: 13px;
   }
 
   .infoContainer{
@@ -148,6 +144,8 @@
     background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
     padding-bottom: 80px; 
   }      
+
+
   
   .infoContainer{
    padding-top: 60px;
@@ -177,7 +175,7 @@
   .header{
     background-image: url('../../assets/images/header/infoPoly_main_bg_desktop.png');
     padding-bottom: 100px; 
-  }  
+  } 
 
   .infoContainer{
    padding-top: 70px;

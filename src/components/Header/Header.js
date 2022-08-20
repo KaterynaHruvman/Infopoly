@@ -18,71 +18,77 @@ const Header = () => {
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
-  console.log('window.innerWidth');
+
   return (
-    <section className={styles.header}>
-      {
-        showForm && <BackGround setShowForm={setShowForm}/>
-      }
-      {
-        showForm && <ConsaltUs
-          setShowForm={setShowForm}
-          name={name}
-          setName={setName}
-          phone={phone}
-          setPhone={setPhone}
-          email={email}
-          setEmail={setEmail}
-          subject={subject}
-          setSubject={setSubject}
-          message={message}
-          setMessage={setMessage}
-        />
-      }
-      <Container>      
-        <div className={styles.appbar}>
-          <img src={logo} className={styles.logo} alt={"logo"} />
-          <div className={styles.headermenuNav}>
-            <NavLink className={styles.link} 
-             style={({isActive})=>({color: isActive ? "152A3D": '5D9081',
-             fontWeight: isActive ? "700": '300', 
-             pointerEvents: isActive ? "none" : ""})} 
-             to='/'>
-               Home
-             </NavLink>
-            <NavLink className={styles.link} 
-             style={({isActive})=>({color: isActive ? "152A3D": '5D9081',
-             fontWeight: isActive ? "700": '300', 
-             pointerEvents: isActive ? "none" : ""})} 
-             to='/about-us'>
-               About us
-            </NavLink>
-            <button className={styles.headermenuBtn} type='button'>Contact us</button>
-          </div>
-         <StyledEngineProvider injectFirst>
+      <section className={styles.header}>
+          {showForm && <BackGround setShowForm={setShowForm} />}
+          {showForm && (
+              <ConsaltUs
+                  setShowForm={setShowForm}
+                  name={name}
+                  setName={setName}
+                  phone={phone}
+                  setPhone={setPhone}
+                  email={email}
+                  setEmail={setEmail}
+                  subject={subject}
+                  setSubject={setSubject}
+                  message={message}
+                  setMessage={setMessage}
+              />
+          )}
+          <Container>
+              <div className={styles.appbar}>
+                  <img src={logo} className={styles.logo} alt={"logo"} />
+                  <div className={styles.headermenuNav}>
+                      <NavLink
+                          className={styles.link}
+                          style={({ isActive }) => ({
+                              color: isActive ? "152A3D" : "5D9081",
+                              fontWeight: isActive ? "700" : "300",
+                              pointerEvents: isActive ? "none" : "",
+                          })}
+                          to="/"
+                      >
+                          Home
+                      </NavLink>
+                      <NavLink
+                          className={styles.link}
+                          style={({ isActive }) => ({
+                              color: isActive ? "152A3D" : "5D9081",
+                              fontWeight: isActive ? "700" : "300",
+                              pointerEvents: isActive ? "none" : "",
+                          })}
+                          to="/about-us"
+                      >
+                          About us
+                      </NavLink>
+                      <button className={styles.headermenuBtn} type="button">
+                          Contact us
+                      </button>
+                </div>
+                  <StyledEngineProvider injectFirst>
+                      <MenuComponent />
+                  </StyledEngineProvider>
+              </div>
 
-          <MenuComponent/> 
-         </StyledEngineProvider>
-        
-       
-        
-    
-        </div>
+              <div className={styles.infoContainer}>
+                  <h1 className={styles.heading}>Experts in managing and manipulating data</h1>
+                  <p className={styles.description}>
+                      A highly skilled agency specialising in the management of data for companies
+                      of all sizes. We can help you manage your full data life-cycle from retrieval
+                      to presentation.
+                  </p>
 
-      <div className={styles.infoContainer}>
-        <h1 className={styles.heading}>
-          Experts in managing and manipulating data
-        </h1>
-        <p className={styles.description}>
-          A highly skilled agency specialising in the management of data for
-          companies of all sizes. We can help you manage your full data
-          life-cycle from retrieval to presentation.
-        </p>
-        
-        <button onClick={()=>setShowForm(prev=>!prev)} className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate} type='button'>Consult</button>
-       
-      </div>
-    </Container>
+                  <button
+                      onClick={() => setShowForm((prev) => !prev)}
+                      className={styles.btn + " " + styles.btnGreen + " " + styles.btnAnimate}
+                      type="button"
+                  >
+                      Consult
+                  </button>
+            </div>
+          </Container>
       </section>
   );
 };

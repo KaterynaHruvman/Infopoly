@@ -41,17 +41,19 @@
 }
 
 .expandBtn {
-    top: -30%;
+    top: -2.5vh;
     right: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
     padding: 0;
     transform: translateY(30%);
     position: absolute;
     border-radius: 50%;
     background-color: #9BFFC7;
-    /* animation-name: expand; */
 }
 
-.removeBtn{
+/* .removeBtn{
     position: absolute;
     display: flex;
     align-items: center;
@@ -59,8 +61,7 @@
     padding: 0;
     border-radius: 50%;
     background-color: #9BFFC7;
-    /* animation-name: collaps;*/
-} 
+}  */
 
 .jobTitle {
     font-weight: 300; 
@@ -113,6 +114,10 @@
     .theCard {   
         margin-top: 30px;   
         max-width: 350px;
+   }
+
+     .theCard:not(:last-child) {   
+        margin-right: 20px;
    }
 
     .theFront .title { 

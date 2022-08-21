@@ -8,7 +8,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import menuIcon from '../../assets/images/menu.svg';
 import styles from './Menu.module.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Menu() {
   const [state, setState] = React.useState({
@@ -23,22 +23,36 @@ export default function Menu() {
   };
 
   const list = (anchor) => (
-    <Box
-      sx={{ width:  '50vw', height: '100%', background: 'white'}}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List sx={{width: '100%', paddingTop: 2}}>
-        {['Home', 'About us', 'Contact us'].map((text, index) => (
-          <ListItem key={text} disablePadding sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <Link to={text.toLowerCase().split(' ').join('')} 
-              style={{lineHeight: 2, color: '#059042', fontWeight: 'bold'}}
-            >{text}</Link>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+      <Box
+          sx={{ width: "50vw", height: "100%", background: "white" }}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+      >
+          <List sx={{ width: "100%", paddingTop: 2 }}>
+              {["Home", "About us", "Contact us"].map((text, index) => (
+                  <ListItem
+                      key={text}
+                      disablePadding
+                      sx={{ width: "100%", display: "flex", justifyContent: "center" }}
+                  >
+                      <NavLink
+                          className={styles.link}
+                          to={text.toLowerCase().split(" ").join("")}
+                          style={({ isActive }) => ({
+                              color: isActive ? "#059042" : "#5D9081",
+                              fontWeight: isActive ? "700" : "300",
+                              pointerEvents: isActive ? "none" : "",
+                              lineHeight: 2,
+                          })}
+                          // style={{ lineHeight: 2, color: "#059042", fontWeight: "bold" }}
+                      >
+                          {text}
+                      </NavLink>
+                  </ListItem>
+              ))}
+          </List>
+      </Box>
   );
 
   return (

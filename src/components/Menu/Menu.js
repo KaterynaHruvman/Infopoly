@@ -44,9 +44,8 @@ export default function Menu() {
                               fontWeight: isActive ? "700" : "300",
                               pointerEvents: isActive ? "none" : "",
                               lineHeight: 2,
-                          })}
-                          // style={{ lineHeight: 2, color: "#059042", fontWeight: "bold" }}
-                      >
+                          })}                          
+                        >
                           {text}
                       </NavLink>
                   </ListItem>

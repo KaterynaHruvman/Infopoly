@@ -6,14 +6,16 @@ import './App.css'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
+import Contacts from './components/Contacts/Contacts';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      
       <Routes>
         <Route path="/" element={<MainPage/>}/>      
-        <Route path="/about-us" element={<AboutUs/>}/>      
+        <Route path="/about-us" element={<AboutUs/>}/>  
+        <Route path="/contactus" element={<Contacts/>}/>  
       </Routes>  
       <Footer/>  
     </div>

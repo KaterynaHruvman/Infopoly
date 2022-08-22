@@ -63,9 +63,11 @@ const Header = () => {
                       >
                           About us
                       </NavLink>
+                      <NavLink to="/contactus" >
                       <button className={styles.headermenuBtn} type="button">
                           Contact us
                       </button>
+                      </NavLink>
                 </div>
                   <StyledEngineProvider injectFirst>
                       <MenuComponent />

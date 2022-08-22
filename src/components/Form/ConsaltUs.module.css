@@ -2,8 +2,8 @@
     position: fixed;
     z-index: 10;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 80vh;
     overflow: hidden;
     background-color: rgb(186, 240, 170);
     opacity: 0.5;
@@ -18,18 +18,53 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: auto;
+    height: 70%;
     align-items: center;
     justify-content: center;
-    background-color: rgb(72, 179, 120);
+    background-color: rgb(211, 212, 212);
     z-index: 16 !important;
     opacity: 1 !important;
     border-radius: 10px;
-    box-shadow: yellowgreen;
+    box-shadow:white;
     padding: 15px 0;
 }
 
 .form input{
     margin: 10px;
-    background-color: #9BFFC7;
+    background-color:white;
 }
+.formTitle{
+  
+font-weight: 200;  
+    font-size: 2vw;
+    line-height: 8vw;
+   color: #152A3D;
+   font-family: 'Mulish';
+
+}
+.btnGreen {
+    display: block;
+    margin: 0 auto;
+    border-radius: 55px;
+    background-color: #07DA62;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 6vw;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 10;
+    
+    
+
+  }
+
+  .formText{
+      margin-top:5px;
+font-weight: 200;  
+    font-size: 1vw;
+    line-height: 8vw;
+   color: #152A3D;
+   font-family: 'Mulish';
+  }

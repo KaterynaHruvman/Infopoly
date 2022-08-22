@@ -11,7 +11,9 @@
   line-height: 6vw;
   color:#152A3D;
 }
-
+.help{
+    display: none;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -132,5 +134,5 @@
     .policy {
         margin-top: 50px; 
     }
-  
+ 
 }

@@ -10,13 +10,19 @@ function ConsaltUs({ setShowForm, name, phone, email, subject, message, setMessa
 }) {
   const form = useRef();
   const [disabled, setDisabled] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
  
   const nameHandler = (e) => {
-    setName(e.target.value)   
+    if(!/\d/.test(e.target.value)){
+      setName(e.target.value)   
+    }
   }
   const phoneHandler = (e) => {
+    if(/\d/.test(e.target.value)){
       setPhone(e.target.value)   
-
+    }
+    
     
   }
   const emailHandler = (e) => {
@@ -38,34 +44,49 @@ function ConsaltUs({ setShowForm, name, phone, email, subject, message, setMessa
  
   const sendEmail = (e) => {
     e.preventDefault(); 
-    emailjs.sendForm('service_zmmi1uo', 'template_zedv23n', form.current, 'xaUe0KlHcXafY9QNu')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    // emailjs.sendForm('service_zmmi1uo', 'template_zedv23n', form.current, 'xaUe0KlHcXafY9QNu')
+    //   .then((result) => {
+    //     console.log(result.text);
+    //   }, (error) => {
+    //     console.log(error.text);
+    //   });
+      
+    if(phone.length === 10){
+      console.log('correct');
+      setPhone('')
+      setPhoneError(false)
+    }else{
+      console.log('incorrect');
+      setPhoneError(true)
+    }
     setName('')
     setEmail('')
-    setPhone('')
     setSubject('')
     setMessage('')
-    setShowForm(false)
+    if(!phoneError){
+      setShowForm(false)
+    }
     // form.reset
   };
-
   return (
     
 
     <form className={styles.form} ref={form} onSubmit={sendEmail}>
-      <input type="text" name="user_name" placeholder="Name" value={name} onChange={(e)=>nameHandler(e)}/>
+      <h2 className={styles.formTitle}> Get in Touch</h2>
+      <h3 className={styles.formText}> please fill out the quick form and we will be in touch with lightening speed</h3>
+      <input required type="text" name="user_name" placeholder="Name" value={name} onChange={(e)=>nameHandler(e)}/>
       <input type="text" name="user_phone"  placeholder="Phone" value={phone} onChange={(e)=>phoneHandler(e)}/>
+      {
+        phoneError && <span>Incorrect phone</span>
+      }
       <input type="email" name="user_email" placeholder="Email" value={email} onChange={(e)=>emailHandler(e)}/>
       <input type="subject" name="subject" placeholder="Subject" value={subject} onChange={(e)=>subjectHandler(e)}/>
       <textarea name="message" placeholder="Leave your message here" value={message} onChange={(e)=>messageHandler(e)}/>
-      <input type="submit" value="Send" disabled={disabled}/>
+      <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate}  type="submit" value="Send" disabled={phoneError}/>
       </form>
   );
 }
      
     
 export default ConsaltUs;
+ 

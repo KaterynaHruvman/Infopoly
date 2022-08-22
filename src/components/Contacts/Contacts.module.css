@@ -1,0 +1,44 @@
+.contacts{
+    background-color: rgb(248, 237, 237);
+    height: 400px;
+    width: 100%;
+    padding-top: 20px;
+}
+.logo {
+    height: 40px;
+  
+    position:relative;
+    right: 280px;
+  }
+  .photo{
+      width: 100px;
+      height: 150px;
+      margin-left: 250px;
+      position:absolute;
+
+  }
+  a {
+    text-decoration: none;
+  }
+  .listItem{
+      /* margin-top: 5px; */
+      line-height: 8vw;
+      color: #152A3D;
+      font-family: 'Mulish';
+  }
+  .title{
+    color: #05C157;
+
+
+    font-family: 'Mulish';
+    margin-bottom: 5px;
+  }
+  h1{
+      margin-bottom: 5px;
+  }
+  .email{
+    text-decoration: none;
+    color: #152A3D;
+    cursor: pointer;
+    line-height: 5vw;
+  }

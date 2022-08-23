@@ -2,18 +2,21 @@ import styles from './Contacts.module.css'
 import Container from '../Container/Container';
 import logo from "../../assets/images/infoPoly_logo.svg";
 import photo from '../../assets/images/corporate_portrait-64.jpg'
+import { Link, NavLink } from 'react-router-dom';
+import linkdin from '../../assets/images/free-icon-linkedin-220343.png'
 // import { SubtitlesOutlined } from '@mui/icons-material';
 const Contacts = ()=>{
     return (
         <section className={styles.contacts}>
         <Container>
-        <img src={logo} className={styles.logo} alt={"logo"} />
+        <NavLink to="/home"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
+       
             <h2 className={styles.title}> GET IN TOUCH</h2>
-            <h3> We are looking forward to start work with you.</h3>
+            <h3 className={styles.text}> We are looking forward to start work with you.</h3>
 
             
             <div className={styles.list}>
-                <ul>
+                <ul className={styles.list}>
                     <li className={styles.listItem}>
                        <a className={styles.email}  href="tel:+44 207 175 5616"> Phone: +44 207 175 5616 </a> 
                     </li>
@@ -25,7 +28,7 @@ const Contacts = ()=>{
 
                     </li>
                     <li className={styles.listItem}>
-                    Linked In 
+                    <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F"><img src={linkdin} className={styles.linkdin}>LinkedIn</img></a>
 
                     </li>
 

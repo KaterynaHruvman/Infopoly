@@ -59,7 +59,7 @@ const Header = () => {
                               fontWeight: isActive ? "700" : "300",
                               pointerEvents: isActive ? "none" : "",
                           })}
-                          to="/about-us"
+                          to="/aboutus"
                       >
                           About us
                       </NavLink>

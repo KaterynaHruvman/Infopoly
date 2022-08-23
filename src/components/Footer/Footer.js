@@ -1,13 +1,15 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/images/infoPoly_logo 1.png';
 import Container from '../Container/Container';
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <section className={styles.footer}>
            <Container>
                <div className={styles.wrapper}>
                    <div className={styles.info}>
-                       <img src={logo} className={styles.logo} alt="logo" />
+                       
+                       <NavLink to="home"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
                        <p className={styles.infoText}>
                            A highly skilled agency specialising in the management of data for companies 
                            of all sizes. We can help you manage your full data life-cycle from retrieval 

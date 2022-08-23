@@ -69,9 +69,9 @@ function ConsaltUs({ setShowForm, name, phone, email, subject, message, setMessa
     // form.reset
   };
   return (
-    
-
-    <form className={styles.form} ref={form} onSubmit={sendEmail}>
+   
+    <form ref={form} onSubmit={sendEmail}>
+       <div className={styles.form}>
       <h2 className={styles.formTitle}> Get in Touch</h2>
       <h3 className={styles.formText}> please fill out the quick form and we will be in touch with lightening speed</h3>
       <input required type="text" name="user_name" placeholder="Name" value={name} onChange={(e)=>nameHandler(e)}/>
@@ -81,9 +81,11 @@ function ConsaltUs({ setShowForm, name, phone, email, subject, message, setMessa
       }
       <input type="email" name="user_email" placeholder="Email" value={email} onChange={(e)=>emailHandler(e)}/>
       <input type="subject" name="subject" placeholder="Subject" value={subject} onChange={(e)=>subjectHandler(e)}/>
-      <textarea name="message" placeholder="Leave your message here" value={message} onChange={(e)=>messageHandler(e)}/>
-      <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate}  type="submit" value="Send" disabled={phoneError}/>
+      <textarea className={styles.textarea} name="message" placeholder="Leave your message here" value={message} onChange={(e)=>messageHandler(e)}/>
+      <button className={styles.btn+ ' ' +styles.btnGreen+ ' ' +styles.btnAnimate}  type="submit" value="Send" disabled={phoneError}>Send message</button>
+      </div>
       </form>
+  
   );
 }
      

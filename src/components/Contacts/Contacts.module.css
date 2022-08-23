@@ -6,23 +6,21 @@
 }
 .logo {
     height: 40px;
-  
     position:relative;
-    right: 280px;
+    right: 290px;
   }
-  .photo{
+  /* .photo{
       width: 100px;
       height: 150px;
       margin-left: 250px;
       position:absolute;
 
-  }
+  } */
   a {
     text-decoration: none;
   }
   .listItem{
-      /* margin-top: 5px; */
-      line-height: 8vw;
+    margin-top: 15px;
       color: #152A3D;
       font-family: 'Mulish';
   }
@@ -37,8 +35,22 @@
       margin-bottom: 5px;
   }
   .email{
-    text-decoration: none;
     color: #152A3D;
     cursor: pointer;
-    line-height: 5vw;
+    margin-top: 15px;
+    /* text-decoration: none; */
+  }
+  list{
+      height: 70%;
+      width: 80%;
+      background-color: yellowgreen;
+  }
+  .linkdin{
+    margin-top: 10px;
+    height:25px;
+  width:25px;
+   
+  }
+  .text{
+    margin-top: 15px;
   }

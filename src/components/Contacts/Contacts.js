@@ -9,7 +9,7 @@ const Contacts = ()=>{
     return (
         <section className={styles.contacts}>
         <Container>
-        <NavLink to="/home"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
+        <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
        
             <h2 className={styles.title}> GET IN TOUCH</h2>
             <h3 className={styles.text}> We are looking forward to start work with you.</h3>

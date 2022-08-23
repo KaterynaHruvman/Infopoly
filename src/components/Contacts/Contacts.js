@@ -9,7 +9,7 @@ const Contacts = ()=>{
     return (
         <section className={styles.contacts}>
         <Container>
-        <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
+        {/* <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink>  */}
        
             <h2 className={styles.title}> GET IN TOUCH</h2>
             <h3 className={styles.text}> We are looking forward to start work with you.</h3>
@@ -28,7 +28,10 @@ const Contacts = ()=>{
 
                     </li>
                     <li className={styles.listItem}>
-                    <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F"><img src={linkdin} className={styles.linkdin}>LinkedIn</img></a>
+                            <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F">
+                                <img src={linkdin} className={styles.linkdin} alt='linkedIn'/>
+                                LinkedIn
+                            </a>
 
                     </li>
 

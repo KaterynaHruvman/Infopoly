@@ -4,6 +4,7 @@ import logo from "../../assets/images/infoPoly_logo.svg";
 import photo from '../../assets/images/corporate_portrait-64.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import linkdin from '../../assets/images/free-icon-linkedin-220343.png'
+import upwork from '../../assets/images/upwork_logo_icon_170310.png'
 // import { SubtitlesOutlined } from '@mui/icons-material';
 const Contacts = ()=>{
     return (
@@ -21,17 +22,20 @@ const Contacts = ()=>{
                        <a className={styles.email}  href="tel:+44 207 175 5616"> Phone: +44 207 175 5616 </a> 
                     </li>
                     <li className={styles.listItem}>
-                    <a className={styles.email} href="e-mail: info@infopoly.com"> E-mail: info@infopoly.com </a>  
+                    <a className={styles.email} href="e-mail: contact@infopoly.com"> E-mail: contact@infopoly.com </a>  
                     </li>
                     <li className={styles.listItem}> 
                         Adress: .....
 
                     </li>
                     <li className={styles.listItem}>
-                    <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F"><img src={linkdin} className={styles.linkdin}>LinkedIn</img></a>
+                    <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F"><img src={linkdin} className={styles.linkdin}/></a>
 
                     </li>
+                    <li className={styles.listItem}>
+                    <a href='https://www.upwork.com/nx/wm/client/dashboard'><img src={upwork} className={styles.linkdin}/></a>
 
+                    </li>
                     
                 </ul>
                

@@ -9,7 +9,7 @@ const Footer = () => {
                <div className={styles.wrapper}>
                    <div className={styles.info}>
                        
-                       <NavLink to="home"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
+                       <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
                        <p className={styles.infoText}>
                            A highly skilled agency specialising in the management of data for companies 
                            of all sizes. We can help you manage your full data life-cycle from retrieval 

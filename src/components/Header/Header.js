@@ -1,9 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import Container from "../Container/Container";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import logo from "../../assets/images/infoPoly_logo.svg";
 import menu from "../../assets/images/menu.svg";
-
 import ConsaltUs from '../Form/ConsaltUs';
 import { useState } from 'react';
 import BackGround from '../Form/Background';
@@ -18,12 +18,28 @@ const Header = () => {
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
+  const toastHandler = ()=>{
+    toast("Thanks! 👌🏻 Your message has been sent!");
 
+  }
   return (
       <section className={styles.header}>
+        <ToastContainer 
+            theme="light"
+            
+            position="top-center"
+             autoClose={3000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover/>
           {showForm && <BackGround setShowForm={setShowForm} />}
           {showForm && (
               <ConsaltUs
+                  toastHandler={toastHandler}
                   setShowForm={setShowForm}
                   name={name}
                   setName={setName}

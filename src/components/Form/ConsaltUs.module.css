@@ -1,11 +1,10 @@
 .container{
-    position: fixed;
+    position: absolute;
     z-index: 10;
-    top: 0;
-    width: 90vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    /* background-color: rgb(186, 240, 170); */
+    background-color: rgb(151, 156, 150);
     opacity: 0.5;
     filter: blur(4px);
     cursor: pointer;
@@ -13,12 +12,11 @@
 
 .form{
     position: fixed;
-    top: 20%;
-    left: 25%;
+    top: 10%;
+    left: 15%;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 70%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     background-color: rgb(211, 212, 212);
@@ -29,24 +27,46 @@
     padding: 15px 0;
 }
 
-.form input{
-    height: 30%;
-    width: 50%;
-    margin: 5px;
-    background-color:white;
-}
 .formTitle{
-  
-font-weight: 200;  
-    font-size: 2vw;
-    line-height: 4vw;
-   color: #152A3D;
-   font-family: 'Mulish';
-
+    font-weight: 600;  
+    font-size: 16px;
+    line-height: 20px;
+    color: #152A3D;
+    font-family: 'Mulish';
+    
+}
+.formText{ 
+    margin-left: 10px;
+    margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+ color: #152A3D;
+ font-family: 'Mulish';
+ text-align: center;
+}
+.form input{
+    width: 90%;
+    margin:  5px 0;
+    background-color:white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.form input::placeholder{
+    color: rgb(32, 24, 24);
+}
+.textarea{
+    border: none;
+    width: 90%;
+    border-radius: 4px;
+    resize: none; 
+    margin-top: 5px;
+    padding: 5px 15px;
+}
+.textarea::placeholder{
+    color: rgb(32, 24, 24);
 }
 .btnGreen {
-    display: block;
-    margin-top:5px;
+    margin-top: 15px;
     border-radius: 55px;
     background-color: #07DA62;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -55,31 +75,12 @@ font-weight: 200;
     line-height: 6vw;
     text-align: center;
     color: #ffffff;
-    cursor: pointer;
-    z-index: 10;
     padding: 10px 20px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  border-style: none;
-  color: #FFFFFF;
-  border-radius: 55px;
-  background-color: #059042;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    background-color: #059042;
 }
     
-
-
-
-  .formText{ 
-      margin-left: 10px;
-      margin-bottom: 15px;
-    font-weight: 400;
-    font-size: 16px;
-   color: #152A3D;
-   font-family: 'Mulish';
-  }
-  .textarea{
-      width: 50%;
-      height: 50%;
-      resize: none; 
-  }

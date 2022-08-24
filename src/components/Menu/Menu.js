@@ -38,7 +38,7 @@ export default function Menu() {
                   >
                       <NavLink
                           className={styles.link}
-                          to={text.toLowerCase().split(" ").join("")}
+                          to={text.toLowerCase()==='home' ? '/' : text.toLowerCase().split(" ").join("")}
                           style={({ isActive }) => ({
                               color: isActive ? "#059042" : "#5D9081",
                               fontWeight: isActive ? "700" : "300",

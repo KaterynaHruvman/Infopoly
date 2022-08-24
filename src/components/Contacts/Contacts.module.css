@@ -57,5 +57,20 @@
     margin-top: 15px;
     font-size: 16px;
     font-family: 'Mulish';
+    text-align: center;
 
+  }
+  @media (min-width: 768px)  {
+    .logo {
+      height: 40px;
+      position:relative;
+      right: 280px;
+    }
+  }
+  @media (min-width: 390px)  {
+    .logo {
+      height: 40px;
+      position:relative;
+      right: 110px;
+    }
   }

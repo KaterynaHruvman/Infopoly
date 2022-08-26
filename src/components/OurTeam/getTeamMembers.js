@@ -2,7 +2,7 @@ import TeamMember from "./TeamMember/TeamMember";
 import Dariush from "../../assets/images/team/dariusz-bielak.jpg"
 import Matthew from "../../assets/images/team/matthew-thrower.jpg"
 import Isabela from "../../assets/images/team/isabela.jpg"
-import Kateryna from "../../assets/images/team/kateryna-hruvman.jpg"
+import Kateryna from "../../assets/images/team/58801E8E-90C8-4833-8BB4-E7DC8A170669.jpg"
 import Mario from "../../assets/images/team/mariolima.jpg"
 import CJ from "../../assets/images/team/cj.jpg"
 import Slavik from "../../assets/images/team/yaroslav-maniukh.jpg"

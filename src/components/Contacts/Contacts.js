@@ -1,6 +1,5 @@
 import styles from './Contacts.module.css'
 import Container from '../Container/Container';
-import logo from "../../assets/images/infoPoly_logo.svg";
 import photo from '../../assets/images/corporate_portrait-64.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import linkdin from '../../assets/images/free-icon-linkedin-220343.png'
@@ -10,8 +9,7 @@ const Contacts = ()=>{
     return (
         <section className={styles.contacts}>
         <Container>
-        <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> 
-       
+        
             <h2 className={styles.title}> GET IN TOUCH</h2>
             <h3 className={styles.text}> We are looking forward to start work with you.</h3>
 

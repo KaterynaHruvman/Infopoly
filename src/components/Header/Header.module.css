@@ -1,21 +1,20 @@
 
 .header{
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: auto;
+  padding: 10px 0;
   background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 20vw;  
+  z-index: 100;
 }
 
 .appbar{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  
+  align-items: center;  
 }
 
 .logo {
@@ -40,16 +39,6 @@
   margin-right: 25px;
 }
 
-.headermenuBtn{
-  padding: 10px 20px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  border-style: none;
-  color: #FFFFFF;
-  border-radius: 55px;
-  background-color: #059042;
-}
 
 .menuBtn{
   border-style: none;
@@ -59,145 +48,43 @@
   margin-top: 500px;
 }
 
-.infoContainer{
-  width: 100%;
-  padding-top: 25vw;
-  text-align: center;
-  font-style: normal;
-  color: #152A3D;
-}
-
-.heading {
-  font-weight: 700;  
-  font-size: 7.5vw;
-  line-height: 9vw;
-  margin-bottom: 5vw;
-}
-
-.description {
-  font-weight: 300;
-  font-size: 4vw;
-  line-height: 6vw;
-}
-
-.btnGreen {
-  display: block;
-  margin: 0 auto;
-  margin-top: 30vw;
-  padding: 10px 40px;
-  border-radius: 55px;
-  background-color: #07DA62;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
-  font-size: 5vw;
-  line-height: 6vw;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
-}
-
 @media (min-width: 428px)  {
   /* .menuBtn{
     display: none;
   } */
   
 }
-@media (min-width: 428px) and (max-width: 534px)  {
- 
-}
-@media (min-width: 768px)  {
-  .appbar{
-    padding-bottom: 30px;
-    padding-top: 30px;    
+@media (min-width: 428px) and (max-width: 767px)  {
+  .header{
+    padding: 12px 0;
   }
+}
 
+@media (min-width: 768px) and (max-width: 1199px) { 
+  .header{
+    padding: 15px 0;
+    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+  }      
   .headermenuNav{
     display: flex;
     align-items: center;
   }
-
-  .headermenuNav button {    
-    font-size: 12px;
-    padding: 5px 12px;
-  }
   
-  .headermenuNav a{
-    margin-right: 10px !important;
-    font-size: 13px;
-  }
-
-  .infoContainer{
-    text-align: left;
-  }
-  
-
-  .btnGreen {
-    margin: 0;
-  }
-  
-}
-
-
-
-@media (min-width: 768px) and (max-width: 1199px) { 
-  .header{
-    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
-    padding-bottom: 80px; 
-  }      
-
-
-  
-  .infoContainer{
-   padding-top: 60px;
-  }
-
-  .heading {
-    font-size: 30px;
-    line-height: 34px;
-    max-width: 340px;
-    margin-bottom: 20px
-  }
-  
-  .description {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 500px;
-  }
-
-  .btnGreen {
-    margin-top: 60px;
-    font-size: 16px;
-    line-height: 12px;
-  }
+ 
 }
 
 @media (min-width: 1200px) { 
   .header{
-    background-image: url('../../assets/images/header/infoPoly_main_bg_desktop.png');
-    padding-bottom: 100px; 
-  } 
-
-  .infoContainer{
-   padding-top: 70px;
+    padding: 20px 0;
+    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+  }      
+  .headermenuNav{
+    display: flex;
+    align-items: center;
   }
-
-  .heading {
-    font-size: 30px;
-    line-height: 34px;
-    max-width: 340px;
-    margin-bottom: 20px
-  }
+ 
   
-  .description {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 500px;
-  }
-  .btnGreen {
-    margin-top: 60px;
-    font-size: 16px;
-    line-height: 12px;
-  }
+  
 }
 
 

@@ -4,9 +4,10 @@ import OurClient from "../OurClient/OurClient";
 import OurServices from "../Ourservises/OurServices";
 import OurTeam from "../OurTeam/OurTeam";
 import Header from '../Header/Header';
+import HeroSection from "../HeroSection/HeroSection";
 const MainPage = () => (
   <>   
-  <Header/>
+    <HeroSection/>
     <OurServices />
     <Map />
     <OurTeam/>

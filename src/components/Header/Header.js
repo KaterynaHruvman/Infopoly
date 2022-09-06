@@ -34,33 +34,33 @@ const activeLink = {
 const Header = () => {
     return (
         <section className={styles.header}>
-            <Container>
+            <Container>                    
                 <div className={styles.appbar}>
-                    <NavLink to='/'>
+                    <NavLink to="/">
                         <img src={logo} className={styles.logo} alt={"logo"} />
                     </NavLink>
                     <div className={styles.headermenuNav}>
                         <NavLink
                             className={styles.link}
-                            style={({ isActive }) => isActive ? activeLink : link}
+                            style={({ isActive }) => (isActive ? activeLink : link)}
                             to="/"
                         >
                             Home
-                      </NavLink>
+                        </NavLink>
                         <NavLink
                             className={styles.link}
-                            style={({ isActive }) => isActive ? activeLink : link}
+                            style={({ isActive }) => (isActive ? activeLink : link)}
                             to="/aboutus"
                         >
                             About us
-                      </NavLink>
+                        </NavLink>
                         <NavLink
                             className={styles.link}
-                            style={({ isActive }) => isActive ? activeLink : link}
+                            style={({ isActive }) => (isActive ? activeLink : link)}
                             to="/contactus"
                         >
                             Contact us
-                      </NavLink>
+                        </NavLink>
                         {/* <NavLink to="/contactus">
                       <button className={styles.headermenuBtn} type="button">
                           Contact us

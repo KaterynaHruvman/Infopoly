@@ -4,9 +4,11 @@
   top: 0;
   width: 100%;
   padding: 10px 0;
-  background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
+  background:rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  /* background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   z-index: 100;
 }
 
@@ -63,7 +65,7 @@
 @media (min-width: 768px) and (max-width: 1199px) { 
   .header{
     padding: 15px 0;
-    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+    /* background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg'); */
   }      
   .headermenuNav{
     display: flex;
@@ -76,7 +78,7 @@
 @media (min-width: 1200px) { 
   .header{
     padding: 20px 0;
-    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
+    /* background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg'); */
   }      
   .headermenuNav{
     display: flex;

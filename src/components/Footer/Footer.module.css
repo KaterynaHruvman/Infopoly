@@ -10,6 +10,7 @@
   font-size: 4vw;
   line-height: 6vw;
   color:#152A3D;
+  z-index: 1;
 }
 .help{
     display: none;

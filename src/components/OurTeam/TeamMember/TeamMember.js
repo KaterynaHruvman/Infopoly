@@ -6,35 +6,35 @@ import styles from './TeamMember.module.css';
 import { useEffect } from 'react';
 
 const TeamMember = (props) => {
-    const { img, name, job_title, bio } = props.member
-    const [open, setOpen] = useState(false) 
-    
+    const { img, name, job_occupation, bio, job_title } = props.member
+    const [open, setOpen] = useState(false)
+
     return (
         <div className={styles.theCard}>
             <div className={styles.theFront}>
                 <div className={styles.imgWrapper}>
                     <img src={img} className={styles.img} alt={img} />
-                    
-                        <div className={open ? styles.theBackOpen : styles.theBackClosed }>
-                            <span className={styles.bio}>{bio}</span>
-                        </div>
-                    
+
+                    <div className={open ? styles.theBackOpen : styles.theBackClosed}>
+                        <span className={styles.bio}>{bio}</span>
+                    </div>
+
                     <div className={styles.label}>
                         <button
                             className={styles.expandBtn}
                             type="button"
                             onClick={() => {
-                                setOpen(!open) 
-                            } }
+                                setOpen(!open)
+                            }}
                         >
                             {open ? (
                                 <RemoveCircleRoundedIcon fontSize="medium" />
                             ) : (
-                                <AddCircleRoundedIcon fontSize="medium" />
-                            )}
+                                    <AddCircleRoundedIcon fontSize="medium" />
+                                )}
                         </button>
                         <h1 className={styles.name}>{name}</h1>
-                        <h2 className={styles.jobTitle}>{job_title}</h2>
+                        <h2 className={styles.jobTitle}>{job_occupation ? job_occupation : job_title}</h2>
                     </div>
                 </div>
             </div>

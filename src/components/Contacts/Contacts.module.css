@@ -1,10 +1,11 @@
 .contacts{
     background-color: rgb(192, 236, 218);
-    height: 400px;
+    height: 90vh;
     width: 100%;
     padding-top: 100px;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 500px;
 }
 
   /* .photo{
@@ -15,7 +16,7 @@
       
     } */
     .title{
-      margin: 0;
+      margin-top: 15px;
       color: #05C157;
       font-family: 'Mulish';
       margin-bottom: 5px;
@@ -28,13 +29,15 @@
   
     }
     .list{
-      position: fixed;
-      width: 60%;
-      bottom: 55%;
+      position: absolute;
+      width: 50%;
+      height: 40%;
+      top: 50%;
       z-index: 20;
       display: flex;
       flex-direction: column;
       align-items: center;
+ 
       background-color: white;
       padding: 0;
       padding: 10px;
@@ -68,8 +71,9 @@
     width: 18px;
     height: 18px;
     margin: 5px;
-    /* background-color:#FFC403;
-    border-radius: 7px; */
+    padding-block: 2px;
+    background-color:#FFC403;
+    border-radius: 18px;
   }
   @media (min-width: 428px) and (max-width: 767px)  {
 
@@ -80,7 +84,7 @@
   @media  (min-width: 1200px) {
     .list{
 
-      position: fixed;
+      position: absolute;
       width: 20%;
       height: 30%;
       bottom: 45%;
@@ -95,8 +99,19 @@
       box-shadow: 10px 5px 5px grey;
     }
     .listItem{
-      width: 100%;
+      width: fit-content;
       font-size: 16px;
       line-height: 30px;
+    block-size: fit-content;
     }
-  }
+
+      .listItemImg{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    
+        background-color:#FFC403;
+        border-radius: 18px;
+      }
+    }
+  

@@ -5,15 +5,16 @@ import OurServices from "../Ourservises/OurServices";
 import OurTeam from "../OurTeam/OurTeam";
 import Header from '../Header/Header';
 import HeroSection from "../HeroSection/HeroSection";
+import Footer from "../Footer/Footer";
 const MainPage = () => (
-  <>   
-    <HeroSection/>
+  <>
+    <HeroSection />
     <OurServices />
     <Map />
-    <OurTeam/>
-    <OurClient/>
-     
+    <OurTeam />
+    <OurClient />
+    <Footer />
   </>
-  );
-  
-  export default MainPage;
+);
+
+export default MainPage;

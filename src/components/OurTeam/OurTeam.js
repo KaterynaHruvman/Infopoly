@@ -16,26 +16,26 @@ const OurTeam = () => {
 
   return (
     <section className={styles.team}>
-    <Container>
-      <div className={styles.teamWrapper}>
-      <h1 className={styles.title}>Meet Our Team</h1>
-      <div className={styles.navigation}>
-        <div onClick={()=>setActiveTab('Founder')} className={activeTab==="Founder" ? styles.activeTab : ''}>Founders</div>
-        <div onClick={() => setActiveTab('Data scientist')} className={activeTab === "Data Analyst" ? styles.activeTab : ''}>Data scientist</div>
-        <div onClick={() => setActiveTab('Designer')} className={activeTab==="Designer" ? styles.activeTab : ''}>Designers</div>
-        <div onClick={() => setActiveTab('Developer')} className={activeTab==="Developer" ? styles.activeTab : ''}>Developers</div>
-       
-         
-      </div>
-      <div className={styles.membersContainer}>
-        {
-          members.filter(e=>e.job_title===activeTab).map(member => {
-            return <TeamMember key={member.id} member={member}/>
-          })
-        }
-      </div>
-    </div>
-    </Container>
+      <Container>
+        <div className={styles.teamWrapper}>
+          <h1 className={styles.title}>Meet Our Team</h1>
+          <div className={styles.navigation}>
+            <div onClick={() => setActiveTab('Finance Team')} className={activeTab === "Finance Team" ? styles.activeTab : ''}>Finance</div>
+            <div onClick={() => setActiveTab('Data Science')} className={activeTab === "Data Science" ? styles.activeTab : ''}>Data Science</div>
+            <div onClick={() => setActiveTab('Web/App Design')} className={activeTab === "Web/App Design" ? styles.activeTab : ''}>Web/App Design</div>
+            <div onClick={() => setActiveTab('Data Engineering')} className={activeTab === "Data Engineering" ? styles.activeTab : ''}>Data Engineering</div>
+            <div onClick={() => setActiveTab('DevSecOps')} className={activeTab === "DevSecOps" ? styles.activeTab : ''}>DevSecOps</div>
+
+          </div>
+          <div className={styles.membersContainer}>
+            {
+              members.filter(e => e.job_title === activeTab).map(member => {
+                return <TeamMember key={member.id} member={member} />
+              })
+            }
+          </div>
+        </div>
+      </Container>
     </section>
   );
 };

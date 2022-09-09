@@ -24,6 +24,7 @@
 
 .navigation{
   display: flex;
+  align-items: center;
 }
 
 .navigation >div{
@@ -32,6 +33,7 @@
   font-size: 3vw;
   line-height: 4vw;
   cursor: pointer;
+  text-align: center;
 }
 
 .navigation >div:not(:last-child){

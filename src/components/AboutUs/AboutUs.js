@@ -1,5 +1,5 @@
-import FooterSmall from "../FooterSmall/FooterSmall"
-
+import styles from './AboutUs.module.css'
+import FooterSmall from '../FooterSmall/FooterSmall'
 
 const AboutUs = () => {
     return (

@@ -1,16 +1,30 @@
 .container{
-    position: absolute;
-    z-index: 10;
+    position: fixed;
+    z-index: 101;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: flex-end;
     overflow: hidden;
     background-color: rgb(151, 156, 150);
     opacity: 0.5;
-    filter: blur(4px);
     cursor: pointer;
 }
-
+.closeBtn{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 105;
+    height: 50px;
+    width: 50px;
+    opacity: 100 !important;
+    top: 8.5%;
+    left: 76%;
+}
 .form{
+    display: none;
     position: fixed;
     top: 10%;
     left: 15%;
@@ -20,8 +34,8 @@
     align-items: center;
     justify-content: center;
     background-color: #FFC403;
-    
-    z-index: 16 !important;
+    padding: 10px;
+    z-index: 102 !important;
     opacity: 1 !important;
     border-radius: 10px;
     box-shadow:white;
@@ -85,3 +99,30 @@
     background-color: #059042;
 }
     
+@media (min-width: 596px) and (max-width: 800px){
+    .form{
+    }
+    .formText{
+        line-height: 20px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+    .form{
+        width: 50%;
+        left: 25%;
+    }
+    .closeBtn{
+        left: 70%;
+    }
+}
+@media (min-width: 1000px){
+    .form{
+        width: 30%;
+        left: 35%;
+    }
+    .closeBtn{
+        left: 60%;
+    }
+}

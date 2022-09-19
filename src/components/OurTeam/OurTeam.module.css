@@ -63,6 +63,7 @@
 
   .membersContainer{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .title{   

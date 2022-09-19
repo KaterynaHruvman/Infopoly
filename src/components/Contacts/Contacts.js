@@ -2,9 +2,10 @@ import styles from './Contacts.module.css'
 import Container from '../Container/Container';
 import photo from '../../assets/images/corporate_portrait-64.jpg'
 import { Link, NavLink } from 'react-router-dom';
-import linkdin from '../../assets/images/free-icon-linkedin-220343.png'
+import linkdin from '../../assets/images/Social-35-Linkedin-Outline_icon-icons.com_66384.png'
 import upwork from '../../assets/images/upwork_logo_icon_170310.png'
 import FooterSmall from '../FooterSmall/FooterSmall';
+import phone from '../../assets/images/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.svg'
 
 // import { SubtitlesOutlined } from '@mui/icons-material';
 const Contacts = () => {
@@ -20,7 +21,7 @@ const Contacts = () => {
 
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
-                            <a className={styles.contact} href="tel:+44 207 175 5616"> Phone: +44 207 175 5616 </a>
+                            <a className={styles.contact} href="tel:+44 207 175 5616"><img src={phone} className={styles.phoneImg} /> Phone: +44 207 175 5616 </a>
                         </li>
                         <li className={styles.listItem}>
                             <a className={styles.contact} href="e-mail: contact@infopoly.com"> E-mail: contact@infopoly.com </a>

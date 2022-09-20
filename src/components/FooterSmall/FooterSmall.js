@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const FooterSmall = () => {
     return (
         <section className={styles.footer}>
-            <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink>
+            {/* <NavLink to="/"> <img src={logo} className={styles.logo} alt={"logo"} /></NavLink> */}
             <span className={styles.policy}>©InfoPoly LTD 2022. All rights reserved</span>
         </section>
     )

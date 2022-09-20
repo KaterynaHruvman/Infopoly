@@ -19,25 +19,26 @@
       margin-top: 15px;
       color: #05C157;
       font-family: 'Mulish';
+
       margin-bottom: 5px;
     }
     .text{
       margin-top: 15px;
+      line-height: 5px;
       font-size: 16px;
       font-family: 'Mulish';
-      text-align: center;
+      text-align: left;
   
     }
     .list{
       position: absolute;
       width: 50%;
-      height: 40%;
-      top: 50%;
+      height: 30%;
+      top: 35%;
       z-index: 20;
       display: flex;
       flex-direction: column;
       align-items: center;
- 
       background-color: white;
       padding: 0;
       padding: 10px;
@@ -46,11 +47,12 @@
     }
     .listItem{
       width: 100%;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
-      text-align: center;
+      text-align: left;
       color: #152A3D;
       font-family: 'Mulish';
+      margin-bottom: 10px;
       
     }
   
@@ -71,52 +73,78 @@
     width: 18px;
     height: 18px;
     margin: 5px;
-    background-color:#FFC403;
-    border-radius: 18px;
+    /* background-color:#FFC403;
+    border-radius: 18px; */
   }
 
-  .phoneImg{
-
-  }
+  
   @media (min-width: 428px) and (max-width: 767px)  {
     .listItem{
-      margin-top: 20px;
-      line-height: 5px;
-      font-size: 18px;
-  }}
+     margin-top:5px;
+      font-size: 16px;
+  }
+  .list{
+   
+    width: 60%;
+    height: 30%;
+    top: 35%;
+  }
+  .listItemImg{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+}
   @media (min-width: 768px) and (max-width: 1199px) {
     
+    .listItem{
+      margin-top:5px;
+       font-size: 18px;
+   }
+   .listItemImg{
+    width: 25px;
+    height: 25px;
+  }
+
+
   }
   @media  (min-width: 1200px) {
     .list{
       position: absolute;
-      width: 20%;
-      height: 30%;
-      bottom: 45%;
+      width: 40%;
+      height: 40%;
+      bottom: 40%;
       z-index: 20;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-color: white;
+      align-items: left;
+     
       padding: 0;
       padding: 20px;
       border-radius: 5px;
       box-shadow: 10px 5px 5px grey;
     }
+    .title{
+      margin-top: 15px;
+      color: #05C157;
+      font-family: 'Mulish';
+      /* font-size: 20px; */
+      margin-bottom: 5px;
+    }
     .listItem{
-      width: fit-content;
-      font-size: 16px;
+      /* width: fit-content; */
+      font-size: 18px;
       line-height: 30px;
-    block-size: fit-content;
+      block-size: fit-content;
     }
 
       .listItemImg{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         margin: 5px;
     
-        background-color:#FFC403;
-        border-radius: 18px;
+        /* background-color:#FFC403; */
+       
       }
     }
     

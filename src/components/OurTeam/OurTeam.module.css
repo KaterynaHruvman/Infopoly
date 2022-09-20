@@ -17,7 +17,7 @@
 
 .title {
   font-weight: 700;  
-  font-size: 6vw;
+  font-size: 4vw;
   line-height: 8vw;
   border-bottom: 2px solid  #152A3D;
 }
@@ -30,14 +30,14 @@
 .navigation >div{
   margin-top: 8vw;
   font-weight: 300;
-  font-size: 3vw;
+  font-size: 2.5vw;
   line-height: 4vw;
   cursor: pointer;
   text-align: center;
 }
 
 .navigation >div:not(:last-child){
-  margin-right: 5px; 
+  margin-right: 7px; 
 }
 
 .activeTab{
@@ -93,4 +93,11 @@
     background-size: contain, contain;  
     padding: 100px 0px;
   } 
+  .title{
+    font-size: 28px;
+  }
+  .navigation >div{   
+    font-size: 24px;
+    line-height: 28px;
+}
 }

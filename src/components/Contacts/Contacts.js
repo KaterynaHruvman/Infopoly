@@ -3,7 +3,7 @@ import Container from '../Container/Container';
 import photo from '../../assets/images/corporate_portrait-64.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import linkdin from '../../assets/images/Social-35-Linkedin-Outline_icon-icons.com_66384.png'
-import upwork from '../../assets/images/upwork_logo_icon_170310.png'
+import upwork from '../../assets/images/upwork_icon_130799.png'
 import FooterSmall from '../FooterSmall/FooterSmall';
 import phone from '../../assets/images/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.svg'
 

@@ -21,7 +21,7 @@ const Contacts = () => {
 
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
-                            <a className={styles.contact} href="tel:+44 207 175 5616"><img src={phone} className={styles.phoneImg} /> Phone: +44 207 175 5616 </a>
+                            <a className={styles.contact} href="tel:+44 207 175 5616"> Phone: +44 207 175 5616 </a>
                         </li>
                         <li className={styles.listItem}>
                             <a className={styles.contact} href="e-mail: contact@infopoly.com"> E-mail: contact@infopoly.com </a>
@@ -41,7 +41,7 @@ const Contacts = () => {
                         </div>
 
                     </ul>
-
+                    {/* <img src={phone} className={styles.phoneImg} /> */}
 
                     {/* <img src={photo} className={styles.photo} /> */}
                 </Container>

@@ -22,6 +22,7 @@
     opacity: 100 !important;
     top: 8.5%;
     left: 76%;
+    cursor: pointer;
 }
 .form{
     display: none;
@@ -39,7 +40,7 @@
     opacity: 1 !important;
     border-radius: 10px;
     box-shadow:white;
-    padding: 15px 0;
+    padding: 10px;
 }
 
 .formTitle{
@@ -51,10 +52,10 @@
     
 }
 .formText{ 
-    margin-left: 10px;
     margin-bottom: 15px;
   font-weight: 400;
   font-size: 12px;
+  line-height: 15px;
  color: #152A3D;
  font-family: 'Mulish';
  text-align: center;
@@ -75,7 +76,7 @@
     border-radius: 4px;
     resize: none; 
     margin-top: 5px;
-    padding: 5px 15px;
+    padding:  5px 10px;
 }
 .textarea::placeholder{
     color: rgb(32, 24, 24);

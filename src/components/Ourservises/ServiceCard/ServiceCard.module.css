@@ -6,7 +6,8 @@
     border-radius: 20px;
     font-family: 'Mulish';
     color:#152A3D;
-    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25)
+   
+    
 }
 
 .theFront {  
@@ -37,9 +38,11 @@
     height: 15vw;   
 }
 
-@media (min-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1199px) {
     .theCard {
         max-width: 145px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+        height: 165px;
     }
 
     .img{
@@ -53,4 +56,22 @@
     }
     
 }
-  
+@media (min-width: 1200px)  {
+    .theCard {
+        max-width: 315px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+        height: 428px;
+    }
+
+    .img{
+        padding: 10px;
+        height: 80px;   
+    }
+
+    .theFront .title { 
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+}

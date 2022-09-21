@@ -9,7 +9,7 @@ const teamMembers = getTeamMembers()
 
 const OurTeam = () => {
   const [members, setMembers] = useState([]);
-  const [activeTab, setActiveTab] = useState('Founder');
+  const [activeTab, setActiveTab] = useState('Finance');
   useEffect(() => {
     setMembers(teamMembers)
   }, [])

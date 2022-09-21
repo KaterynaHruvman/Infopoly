@@ -49,13 +49,13 @@ function ConsaltUs({ setShowForm, name, phone, email, subject, message, setMessa
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // toastHandler()
-    // emailjs.sendForm('service_zmmi1uo', 'template_zedv23n', form.current, 'xaUe0KlHcXafY9QNu')
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    toastHandler()
+    emailjs.sendForm('service_zmmi1uo', 'template_zedv23n', form.current, 'xaUe0KlHcXafY9QNu')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
     if (phone.length === 10) {
       setPhone('')

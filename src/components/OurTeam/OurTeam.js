@@ -9,7 +9,7 @@ const teamMembers = getTeamMembers()
 
 const OurTeam = () => {
   const [members, setMembers] = useState([]);
-  const [activeTab, setActiveTab] = useState('Founder');
+  const [activeTab, setActiveTab] = useState('Finance');
   useEffect(() => {
     setMembers(teamMembers)
   }, [])
@@ -21,13 +21,12 @@ const OurTeam = () => {
           <h1 className={styles.title}>Meet Our Team</h1>
           <div className={styles.navigation}>
             {/* <div onClick={() => setActiveTab('Founder')} className={activeTab === "Founder" ? styles.activeTab : ''}>Founders</div> */}
+            <div onClick={() => setActiveTab('Finance Team')} className={activeTab === "Finance Team" ? styles.activeTab : ''}>Finance</div>
             <div onClick={() => setActiveTab('Data Engineering')} className={activeTab === "Data Engineering" ? styles.activeTab : ''}>Data Engineering</div>
             <div onClick={() => setActiveTab('DevSecOps')} className={activeTab === "DevSecOps" ? styles.activeTab : ''}>DevSecOps</div>
             <div onClick={() => setActiveTab('Data Science')} className={activeTab === "Data Science" ? styles.activeTab : ''}>Data Science</div>
             <div onClick={() => setActiveTab('Finance Team')} className={activeTab === "Finance Team" ? styles.activeTab : ''}>Finance</div>
             <div onClick={() => setActiveTab('Web/App Design')} className={activeTab === "Web/App Design" ? styles.activeTab : ''}>Web/App Design</div>
-
-
 
           </div>
           <div className={styles.membersContainer}>

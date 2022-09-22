@@ -7,9 +7,9 @@ import Mario from "../../assets/images/team/mariolima.jpg"
 import CJ from "../../assets/images/team/cj.jpg"
 import Slavik from "../../assets/images/team/yaroslav-maniukh.jpg"
 import Roman from "../../assets/images/team/roman.jpg"
-import Simon from "../../assets/images/team/Simone.jpg"
-import Katysha from "../../assets/images/team/torkachenko_kateryna 1.jpg"
-import Agata from "../../assets/images/team/Agata.jpg"
+import Simone from "../../assets/images/team/simone-gaudoti.jpg"
+import Katysha from "../../assets/images/team/torkachenko_kateryna.jpg"
+import Agata from "../../assets/images/team/MicrosoftTeams-image (7).png"
 
 const getTeamMembers = () => {
 
@@ -25,7 +25,7 @@ const getTeamMembers = () => {
     { id: 6, img: CJ, name: 'CJ Andrews', job_title: 'Data Engineering', job_occupation: 'Data Architect', bio: 'Business Analyst/Data Architect with over 25 years of expertise in software engineering, data architecture, business analysis, project management, enterprise modernization efforts, technical architecture planning, and technical writing' },
     { id: 7, img: Slavik, name: 'Yaroslav Maniukh', job_title: 'Data Engineering', job_occupation: 'Data Engineer', bio: 'I am python developer, specializing in  writing server-side application logic, connect applications with third-party web services, developing back-end components and support front-end developers with application integration.' },
     { id: 8, img: Roman, name: 'Roman Khramtsov', job_title: 'Data Engineering', job_occupation: 'Database Developer', bio: 'I specialize in implementing best-in-class enterprise BI solutions using the MS SQL Server Toolkit (T-SQL, SSIS, SSAS, SSRS).I am an experienced developer with significant experience in data processing of any complexity. I can take on any role in a Business Intelligence project.' },
-    { id: 12, img: Simon, name: 'Simone Gaudotti', job_title: 'Data Science', job_occupation: 'Data Science', bio: '' },
+    { id: 12, img: Simone, name: 'Simone Gaudotti', job_title: 'Data Science', job_occupation: 'Data Science', bio: '' },
     { id: 13, img: Katysha, name: 'Kateryna Torkachenko', job_title: 'Web/App Design', job_occupation: 'Frontend Developer', bio: 'Bio' },
   ]
 }

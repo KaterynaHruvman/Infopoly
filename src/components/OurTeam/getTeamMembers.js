@@ -2,7 +2,7 @@ import TeamMember from "./TeamMember/TeamMember";
 import Dariush from "../../assets/images/team/dariusz-bielak.jpg"
 import Matthew from "../../assets/images/team/matthew-thrower.jpg"
 import Isabela from "../../assets/images/team/isabela.jpg"
-import Kateryna from "../../assets/images/team/58801E8E-90C8-4833-8BB4-E7DC8A170669.jpg"
+import Kateryna from "../../assets/images/team/Kateryna htuvman.jpg"
 import Mario from "../../assets/images/team/mariolima.jpg"
 import CJ from "../../assets/images/team/cj.jpg"
 import Slavik from "../../assets/images/team/yaroslav-maniukh.jpg"
@@ -15,8 +15,8 @@ const getTeamMembers = () => {
 
   return [
     { id: 1, img: Dariush, name: 'Dariusz Bielak', job_title: 'Founder', job_occupation: 'Founder', bio: 'I enjoy building technology focused teams. Leading by example and challenging my colleagues to become best possible versions of themselves either in work or in life. In my career I always find myself outside my comfort zone, either in internally or customer focus roles. My experience covers traditional Data Warehouse, BigData solutions, DevOps and Data Engineering.I believe in leading by example and futility of long-term planning.' },
-    // { id: 9, img: Dariush, name: 'Stanimir Krastev', job_title: 'DevSecOps', job_occupation: 'DevSecOps', bio: 'I am ukrainian' },
-    // { id: 10, img: Dariush, name: 'Petar Ivanov', job_title: 'DevSecOps', job_occupation: 'DevSecOps', bio: 'I am ukrainian' },
+    { id: 9, img: Dariush, name: 'Dariusz Bielak', job_title: 'DevSecOps', job_occupation: 'DevSecOps', bio: 'I am ukrainian' },
+    { id: 10, img: Dariush, name: 'Petar Ivanov', job_title: 'DevSecOps', job_occupation: 'DevSecOps', bio: 'I am ukrainian' },
     { id: 11, img: Agata, name: 'Agata Bielak', job_title: 'Finance Team', job_occupation: 'CFO', bio: 'BIO' },
     { id: 2, img: Matthew, name: 'Matthew Thrower', job_title: 'Founder', job_occupation: 'Founder', bio: 'I have worked with data for all my career and love liaising with my clients to bring their ideas to life and give them insights into their data they had previously thought impossible. Although the technologies, datasets and methods may change these values still underpin my work.' },
     { id: 3, img: Isabela, name: 'Isabela Cinca', job_title: 'Data Science', job_occupation: 'Data Science', bio: 'I am a Data Science consultant specializing in solutions across ERP applications, CRM solutions, Product Lifecycle Management (PLM), Business Intelligence (BI), Data Analytics and Cloud solutions. I have experience working for Luxury Brands, Finance and Mining companies such as Maserati, Diesel, Bottega Veneta, Alex Bank and BHP.' },

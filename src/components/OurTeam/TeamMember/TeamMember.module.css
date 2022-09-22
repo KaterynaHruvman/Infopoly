@@ -4,14 +4,15 @@
    width: 100%; 
    overflow: hidden;
 }
+
 .theCard img{
     width: 100%;
     height: 100%;   
     /* width: 100%; */
     object-fit: cover;
+        /* width: 100%;
+        object-fit: cover; */
 } 
-
-
 
 .theFront {
    display: flex;
@@ -104,10 +105,6 @@
 }
 
 @media (min-width: 428px) and (max-width: 550px){
-    /* .theCard img{
-        height: 385px;
-    } */
-
     .name{
         line-height: 24px;
     }
@@ -160,11 +157,6 @@
     
 }
 
-
-
-
-
-
 /* 
 .theCard:hover{
     transform: rotateY(180deg);
@@ -196,7 +188,6 @@
     
 }
 
-
 .img{
 height: 385px;
 width: 100%;
@@ -208,8 +199,8 @@ filter:grayscale(100%)
 }
 
 .theFront .name{
-    margin: 0;
-    margin-top:23px;
+margin: 0;
+margin-top:23px;
 font-family: 'Mulish';
 color: #152A3D;
 font-size: 32px;

@@ -1,15 +1,19 @@
 import { Container } from '@mui/material';
 import FooterSmall from '../FooterSmall/FooterSmall';
-import about_picture from '../../assets/images/about_us/about_picture.jpg'
+import about_picture from '../../assets/images/corporate_portrait-103.jpg'
+import dariush_picture from '../../assets/images/about_us/dariusz.jpg'
+import matt_picture from '../../assets/images/about_us/matt.jpg'
+
 import styles from './AboutUs.module.css';
+
 
 const AboutUs = () => {
     return (
         <>
             <Container>
                 <div className={styles.wrapper}>
-                    <h2>ABOUT US</h2>
-                    <img src={about_picture} className={styles.img} alt="infopoly founders" />
+
+                    <img src={about_picture} className={styles.imgFounders} alt="infopoly founders" />
                     <p className={styles.description}>
                         Info – information Poly – polymorphism The etymology of the InfoPoly is
                         such, that I think about an information not as a defined object but living
@@ -28,7 +32,22 @@ const AboutUs = () => {
                         build it – gold miners or oil drillers as you like.
                     </p>
                 </div>
-            </Container>
+                <span className={styles.title}> Meet our Founders</span>
+                <div className={styles.founders}>
+                    <div className={styles.text}>
+                        <p className={styles.name}>Dariusz Bielak</p>
+                        <p className={styles.bio}>I enjoy building technology focused teams. Leading by example and challenging my colleagues to become best possible versions of themselves either in work or in life. In my career I always find myself outside my comfort zone, either in internally or customer focus roles. My experience covers traditional Data Warehouse, BigData solutions, DevOps and Data Engineering.I believe in leading by example and futility of long-term planning.</p>
+                    </div>
+                    <img src={dariush_picture} className={styles.img} alt="infopoly founders" />
+                </div>
+                <div className={styles.founders}>
+                    <div className={styles.text}>
+                        <p className={styles.name}>Matthew Thrower</p>
+                        <p className={styles.bio}>I have worked with data for all my career and love liaising with my clients to bring their ideas to life and give them insights into their data they had previously thought impossible. Although the technologies, datasets and methods may change these values still underpin my work. </p>
+                    </div>
+                    <img src={matt_picture} className={styles.img} alt="infopoly founders" />
+                </div>
+            </Container >
             <FooterSmall />
         </>
     );

@@ -1,7 +1,7 @@
 .theCard {   
    position: relative;
    margin-top: 4vw;    
-   width: 100%; 
+   width: 75%; 
    overflow: hidden;
 }
 
@@ -102,8 +102,13 @@
 .bio {
     font-size: 4vw;
     line-height: 5.5vw;
+    font-family: 'Mulish';
 }
-
+.location{
+    padding-top: 20px;
+    font-weight: 700;
+    font-family: 'Mulish';
+}
 @media (min-width: 428px) and (max-width: 550px){
     .name{
         line-height: 24px;
@@ -121,13 +126,13 @@
 }
 
 @media (min-width: 768px)  {    
-    /* .theCard {   
+    .theCard {   
         margin-top: 30px;
         width: 300px;   
    }
 .theCard img{
     height: 385px;
-} */
+}
      .theCard:not(:last-child) {   
         margin-right: 20px;
    }

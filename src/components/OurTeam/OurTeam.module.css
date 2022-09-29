@@ -30,8 +30,8 @@
 .navigation >div{
   margin-top: 8vw;
   font-weight: 300;
-  font-size: 3vw;
-  line-height: 4vw;
+  font-size: 2.5vw;
+  line-height: 3vw;
   cursor: pointer;
   text-align: center;
 }
@@ -51,7 +51,10 @@
   align-items: center;
   flex-direction: column;
 }
-
+.location{
+  padding-top:15px;
+  
+}
 @media (min-width: 768px)  {
   .team{
     background-image: url('../../assets/images/team/rectangle_1_tablet.svg'), url('../../assets//images/team/rectangle_2_tablet.svg');

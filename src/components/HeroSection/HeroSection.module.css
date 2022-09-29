@@ -44,7 +44,10 @@
   color: #ffffff;
   cursor: pointer;
 }
-
+.btnGreen:hover{
+  background-color: #07DA62;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.8);
+}
 @media (min-width: 428px)  {
   /* .menuBtn{
     display: none;

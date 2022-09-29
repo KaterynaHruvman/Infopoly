@@ -6,7 +6,7 @@ import styles from './TeamMember.module.css';
 import { useEffect } from 'react';
 
 const TeamMember = (props) => {
-    const { img, name, job_occupation, bio, job_title } = props.member
+    const { img, name, job_occupation, bio, job_title, location } = props.member
     const [open, setOpen] = useState(false)
 
     return (
@@ -17,6 +17,7 @@ const TeamMember = (props) => {
 
                     <div className={open ? styles.theBackOpen : styles.theBackClosed}>
                         <span className={styles.bio}>{bio}</span>
+                        <span className={styles.location}>Location:{location}</span>
                     </div>
 
                     <div className={styles.label}>

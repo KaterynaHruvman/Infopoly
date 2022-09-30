@@ -1,81 +1,100 @@
 .container{
-  width: 100%;
-  height: auto;  
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+    width: 100%;
+    height: auto;  
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Mulish';
 }
 
 .wrapper{
-margin-top: 64px;
+    margin-top: 64px;
 }
+
 .imgFounders{
     width: 100%;
 }
+
 .description{
-    font-size: 2vw;
-  line-height: 2.5vw;
-  font-family: 'Mulish';
-  padding-top: 20px;
-  padding-bottom: 20px;
+    font-size: 4vw;
+    line-height: 6vw;  
+    margin-top: 10px;    
+    margin-bottom: 30px;
 }
+
 .bio{
-    font-family: 'Mulish';
-    padding-top: 20px;
-    line-height: 2.5vw;
-   
-    font-family: 'Mulish';
-    font-size: 2.5vw;
-    line-height: 4.5vw;
+    margin-top: 10px;
+    font-size: 4vw;
+    line-height: 6vw;
     font-weight: 500;
 }
+
+.titleWrapper {
+    text-align: center;
+}
+
+.foundersWrapper {
+  box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
 .title{
     font-weight: 700;  
-    font-size: 3vw;
-    line-height: 6vw;
+    font-size: 6vw;
+    line-height: 8vw;
     border-bottom: 2px solid  #152A3D;
-    margin-left: 150px;
- 
 }
+
+
 .founders{
-    padding-top: 10px;
+    margin-top: 30px;
     display:flex;
-    justify-content:space-between;
-   
+    flex-direction: column;
 }
+
 .img{
-    width: 50%;
-padding-bottom: 15px;
-  padding-right: 10px;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right: 10px;
 }
 
 .name{
-    font-family: 'Mulish';
-    font-size: 2.8vw;
+    font-size: 4.2vw;
     line-height: 4.5vw;
-    font-weight: 600;
+    font-weight: 700;
 }
+
 .text{
     display:flex;
     flex-direction: column;
-
 }
+
 @media (min-width: 768px) and (max-width: 1199px) { 
   .container{
     padding-bottom: 80px; 
   }
   .title{
-    margin-left:350px;
- 
+    margin-left:350px; 
 }
 }
 
 @media (min-width: 1200px) { 
-  .container{
-    padding-bottom: 100px; 
-  }
-  .title{
-    margin-left:350px;
- 
-}
+    .container{
+        padding-bottom: 100px; 
+    }
+
+    .title {
+        margin-left:350px; 
+    }
+
+    .description{
+        font-size: 21px;
+        line-height: 2.5vw;
+    }
+
+    .bio{
+        line-height: 2.5vw;
+        font-size: 21px;
+        line-height: 2.5vw;
+    }
 }

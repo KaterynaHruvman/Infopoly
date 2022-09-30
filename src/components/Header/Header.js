@@ -20,17 +20,16 @@ const link = {
 }
 const activeLink = {
     width: 120,
-    textAlign: 'center',
+    textAlign: "center",
     paddingTop: 10,
     paddingBottom: 10,
     paddingLeft: 20,
     paddingRight: 20,
     borderRadius: 55,
-    color: "white",
-    fontWeight: "700",
+    color: "black",
+    fontWeight: "800",
     pointerEvents: "none",
-    backgroundColor: "#059042"
-}
+};
 const Header = () => {
     return (
         <section className={styles.header}>

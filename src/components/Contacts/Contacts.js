@@ -6,7 +6,9 @@ import linkdin from '../../assets/images/Social-35-Linkedin-Outline_icon-icons.c
 import upwork from '../../assets/images/upwork_icon_130799.png'
 import FooterSmall from '../FooterSmall/FooterSmall';
 import phone from '../../assets/images/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.svg'
-
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 // import { SubtitlesOutlined } from '@mui/icons-material';
 const Contacts = () => {
     return (
@@ -17,17 +19,17 @@ const Contacts = () => {
                     <h2 className={styles.title}> GET IN TOUCH</h2>
                     <h3 className={styles.text}> We look forward to start working with you.</h3>
 
-
-
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
-                            <a className={styles.contact} href="tel:+44 207 175 5616"> Phone: +44 207 175 5616 </a>
+                            <PhoneIcon sx={{fontSize: '20px', mr: '15px'}} />
+                            <a className={styles.contact} href="tel:+44 207 175 5616"> +44 207 175 5616 </a>
                         </li>
                         <li className={styles.listItem}>
-                            <a className={styles.contact} href="e-mail: contact@infopoly.com"> E-mail: contact@infopoly.com </a>
+                            <EmailIcon sx={{fontSize: '20px', mr: '15px'}} />
+                            <a className={styles.contact} href="e-mail: contact@infopoly.com">contact@infopoly.com </a>
                         </li>
                         <li className={styles.listItem}>
-                            Adress: 221B Baker Street, London
+                            <LocationOnIcon sx={{fontSize: '20px', mr: '15px'}}/>  221B Baker Street, London
 
                          </li>
                         <div className={styles.socials}>

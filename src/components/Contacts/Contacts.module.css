@@ -1,138 +1,153 @@
 .contacts{
     background-color: rgb(192, 236, 218);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     padding-top: 100px;
     position: relative;
     overflow-x: hidden;
-    padding-bottom: 500px;
+    font-family: 'Mulish';
 }
 
-  /* .photo{
-      width: 100px;
-      height: 150px;
-      margin-left: 250px;
-      position:absolute;
-      
-    } */
-    .title{
-      margin-top: 15px;
+    .title {
       color: #05C157;
-      font-family: 'Mulish';
+      font-size: 5vw;
+      line-height: 7vw;
+    }
 
-      margin-bottom: 5px;
+    .text {
+      font-size: 4vw;
+      line-height: 6vw;
+      text-align: left;  
     }
-    .text{
-      margin-top: 15px;
-      line-height: 5px;
-      font-size: 16px;
-      font-family: 'Mulish';
-      text-align: left;
-  
-    }
-    .list{
-      position: absolute;
-      width: 50%;
-      height: 30%;
-      top: 35%;
-      z-index: 20;
+
+    .list {
+      margin-top: 15vw;
+      /* position: absolute; */
+      /* width: 60%; */
+      height: fit-content;
+      /* top: 35%;
+      z-index: 20; */
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column;     
       background-color: white;
-      padding: 0;
-      padding: 10px;
+      padding: 30px;
       border-radius: 5px;
-      box-shadow: 10px 5px 5px grey;
+      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
     }
+
     .listItem{
+      display: flex;
+      /* justify-content: center; */
       width: 100%;
       font-size: 12px;
       line-height: 20px;
       text-align: left;
       color: #152A3D;
-      font-family: 'Mulish';
-      margin-bottom: 10px;
-      
+      margin-bottom: 10px;      
     }
   
-    .contact{
+    .contact {
       color: #152A3D;
       cursor: pointer;
-      margin-top: 15px;
       /* text-decoration: none; */
     }
-  .socials{
-    display: flex;
-    align-items: center;
-   
-  
-  }
-  
+
+    .socials {
+      margin: 0 auto;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;  
+    }
+
+   .listItemA:first-child{
+          margin-right: 15px;
+    }
+
   .listItemImg{
     width: 18px;
     height: 18px;
-    margin: 5px;
-    /* background-color:#FFC403;
-    border-radius: 18px; */
   }
 
   
   @media (min-width: 428px) and (max-width: 767px)  {
     .listItem{
-     margin-top:5px;
       font-size: 16px;
-  }
-  .list{
-   
-    width: 60%;
-    height: 30%;
-    top: 35%;
-  }
-  .listItemImg{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-  }
+    }
+
+    .list{   
+      max-width: 295px;
+      margin-top: 50px;
+    }
+
+    .listItemImg{
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+    }
 }
+
   @media (min-width: 768px) and (max-width: 1199px) {
-    
+
+    .title{   
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+     .text{
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;  
+    }
+
+    .list {
+      margin-top: 50px;
+      
+    }
+
     .listItem{
       margin-top:5px;
-       font-size: 18px;
-   }
-   .listItemImg{
-    width: 25px;
-    height: 25px;
-  }
+      font-size: 18px;
+    }
+
+    .listItemImg{
+      width: 25px;
+      height: 25px;
+    }
 
 
   }
+  
   @media  (min-width: 1200px) {
+    .contacts {
+      padding-top: 150px;
+    }
+     .text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 20px;
+    }
+
+     .title{   
+        font-size: 26px;
+        line-height: 28px;
+    }
+
     .list{
-      position: absolute;
-      width: 40%;
-      height: 40%;
-      bottom: 40%;
-      z-index: 20;
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: left;
      
       padding: 0;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 10px 5px 5px grey;
+      padding: 40px;
     }
+
     .title{
       margin-top: 15px;
-      color: #05C157;
-      font-family: 'Mulish';
-      /* font-size: 20px; */
-      margin-bottom: 5px;
     }
-    .listItem{
-      /* width: fit-content; */
+
+    .listItem {
       font-size: 18px;
       line-height: 30px;
       block-size: fit-content;
@@ -141,10 +156,7 @@
       .listItemImg{
         width: 25px;
         height: 25px;
-        margin: 5px;
-    
-        /* background-color:#FFC403; */
-       
+        margin: 5px;       
       }
     }
     

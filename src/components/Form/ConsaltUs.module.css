@@ -68,7 +68,7 @@
     border-radius: 4px;
 }
 .form input::placeholder{
-    color: rgb(32, 24, 24);
+    color: rgb(163, 157, 157);
 }
 .textarea{
     border: none;
@@ -79,7 +79,7 @@
     padding:  5px 10px;
 }
 .textarea::placeholder{
-    color: rgb(32, 24, 24);
+    color:  rgb(163, 157, 157);
 }
 .btnGreen {
     margin-top: 15px;
@@ -101,8 +101,8 @@
 }
     
 @media (min-width: 596px) and (max-width: 800px){
-    .form{
-    }
+    /* .form{
+    } */
     .formText{
         line-height: 20px;
         width: 90%;

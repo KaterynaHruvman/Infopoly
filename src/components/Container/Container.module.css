@@ -34,3 +34,25 @@
     padding-right: 240px;
   }
 }
+
+
+@media (min-width: 1920px) {
+  /* .Container {
+    padding-left: 240px;
+    padding-right: 240px;
+  } */
+}
+
+@media (min-width: 2560px) {
+  /* .Container {
+    padding-left: 240px;
+    padding-right: 240px;
+  } */
+}
+
+@media (min-width: 3840px) {
+  /* .Container {
+    padding-left: 240px;
+    padding-right: 240px;
+  } */
+}

@@ -35,12 +35,11 @@
   }
 }
 
-
 @media (min-width: 1920px) {
-  /* .Container {
-    padding-left: 240px;
-    padding-right: 240px;
-  } */
+  .Container {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
 }
 
 @media (min-width: 2560px) {

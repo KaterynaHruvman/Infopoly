@@ -1,14 +1,6 @@
-.container{
-    width: 100%;
-    height: auto;  
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Mulish';
-}
-
-.wrapper{
+.wrapper {
     margin-top: 64px;
+    font-family: 'Mulish';
 }
 
 .imgFounders {
@@ -18,6 +10,7 @@
 .description {
     font-size: 4vw;
     line-height: 6vw;  
+    font-weight: 300;
     margin-top: 10px;    
     margin-bottom: 30px;
 }
@@ -25,8 +18,8 @@
 .bio {
     margin-top: 10px;
     font-size: 4vw;
+    font-weight: 300;
     line-height: 6vw;
-    font-weight: 500;
 }
 
 .titleWrapper {
@@ -38,7 +31,7 @@
     padding-bottom: 30px;
 }
 
-.title{
+.title {
     font-weight: 700;  
     font-size: 6vw;
     line-height: 8vw;
@@ -46,42 +39,38 @@
 }
 
 
-.founders{
+.founders {
   display:flex;
   flex-direction: column;
   margin-top: 30px;
 }
 
-.img{
+.img {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.name{
+.name {
     font-size: 4.2vw;
     line-height: 4.5vw;
     font-weight: 700;
 }
 
-.text{
+.text {
     display:flex;
     flex-direction: column;
 }
 
 @media (min-width: 768px) { 
-  .container{
-    padding-bottom: 80px; 
-  }
-
   .foundersWrapper {
     padding-bottom: 50px;
-}
+  }
 
   .text {
     flex-direction: row;
   }
 
-  .img{
+  .img {
     width: 35%;  
     margin-bottom: 0px;
   }
@@ -98,8 +87,8 @@
     margin-bottom: 50px;
   }
 
-  .founders{
-  margin-top: 50px;
+  .founders {
+    margin-top: 50px;
   }
 
   .bio {
@@ -107,33 +96,61 @@
     line-height: 24px;
   }
 
-  .title{
+  .title {
     font-size: 26px;
     line-height: 28px;
-}
+  }
 
-.name{
+  .name {
     font-size: 21px;
     line-height: 24px;    
-}
+  }
 }
 
 @media (min-width: 1200px) { 
-    .container{
-        padding-bottom: 100px; 
+    .foundersWrapper {
+        padding-bottom: 80px;
     }
 
-    .foundersWrapper {
-    padding-bottom: 80px;
+    .wrapper {
+        margin-top: 80px;
+    }
+
+    .description {
+        margin-top: 20px;   
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 80px;
+    }
+
+    .bio {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .img {
+      width: 35%;
+    }
+
+    .infoWrapper {
+      padding-left: 60px;
   }
+}
+
+@media (min-width: 1400px) { 
+ 
+    /* .foundersWrapper {
+        padding-bottom: 80px;
+    }
 
     .wrapper{
         margin-top: 80px;
     }
 
     .description{
+        margin-top: 20px;   
         font-size: 21px;
-        line-height: 2.5vw;
+        line-height: 32px;
         margin-bottom: 80px;
     }
 
@@ -142,11 +159,11 @@
         line-height: 30px;
     }
 
-     .img{
+    .img{
       width: 35%;
     }
 
     .infoWrapper {
       padding-left: 60px;
-  }
+  } */
 }

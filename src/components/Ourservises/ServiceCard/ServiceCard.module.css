@@ -4,8 +4,6 @@
     border-radius: 20px;
     font-family: 'Mulish';
     color:#152A3D;
-   
-    
 }
 
 .theFront {  
@@ -38,7 +36,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .theCard {
-        padding: 25px 10px;
+        padding: 25px 15px;
         max-width: 145px;
         box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
         height: 165px;
@@ -55,9 +53,10 @@
     }
     
 }
+
 @media (min-width: 1200px)  {
     .theCard {
-        /* max-width: 350px; */
+        max-width: 200px;
         padding: 30px 25px;
         box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
         height: 100%;
@@ -73,4 +72,37 @@
         font-size: 18px;
         line-height: 22px;
     }           
+}
+
+@media (min-width: 1400px)  {
+    .theCard {
+        max-width: 200px;
+        padding: 30px 25px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+        height: 100%;
+    }
+
+    .img{
+        padding: 10px;
+        height: 80px;   
+    }
+
+    .theFront .title { 
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }           
+}
+
+@media (min-width: 1920px)  {
+    .theCard {
+        max-width: 230px;
+        padding: 30px 25px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+        height: 100%;
+    }
+
+    .img {
+        height: 90px;   
+    }         
 }

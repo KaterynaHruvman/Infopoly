@@ -29,7 +29,6 @@
     margin-top: 10vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-auto-rows: minmax(2.3vw, 1fr); */
     grid-gap: 40px;
     justify-content: center;
 }
@@ -68,5 +67,26 @@
     
     .text{
         margin-top: 40px;
+    }  
+}
+
+@media (min-width: 1920px) { 
+    .servicesWrapper{
+        padding: 140px 0px;
+    }
+
+    .cardContainer{
+        margin-top: 60px;    
+    }
+    
+    .title{   
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .text{
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 26px;
     }  
 }

@@ -16,6 +16,7 @@
     display: none;
 }
 .wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +62,6 @@
        flex-direction: row;
        justify-content: space-between;
        align-items: center;
-
     }
     
     .logo {
@@ -80,11 +80,9 @@
         margin: 0;  
     }
 
-    .company,
-    .region {
+    .company {
         margin-right: 20px;
     }
-
 
     .info {
         width: 40%;
@@ -92,18 +90,15 @@
 
     .policy {
         margin-top: 50px; 
-    }
-  
-}
-  
+    }  
+}  
 
 @media (min-width: 1200px) { 
-     .footer {
+    .footer {
         background-image: url('../../assets/images/footer/infoPoly_footer_bg_desktop.jpg');
         padding-top: 100px;
-        padding-bottom: 40px;
-        
-   }
+        padding-bottom: 40px;        
+    }
 
  
     .logo {
@@ -122,8 +117,7 @@
         margin: 0;  
     }
 
-    .company,
-    .region {
+    .company {
         margin-right: 20px;
     }
 

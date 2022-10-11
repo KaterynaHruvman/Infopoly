@@ -45,16 +45,19 @@
   font-size: 24px;
   border-bottom: 1px solid black;
 }
+
 .membersContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .location{
   padding-top:15px;
   
 }
+
 @media (min-width: 768px)  {
   .team{
     background-image: url('../../assets/images/team/rectangle_1_tablet.svg'), url('../../assets//images/team/rectangle_2_tablet.svg');
@@ -89,18 +92,20 @@
 
 
 @media (min-width: 1200px) { 
-  .team{
+  .team {
     background-image: url('../../assets//images/team/rectangle_1_desk.svg'), url('../../assets/images/team/rectangle_2_desk.svg');
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;  
     padding: 100px 0px;
   } 
-  .title{
+
+  .title {
     font-size: 28px;
   }
+  
   .navigation >div{   
     font-size: 24px;
     line-height: 28px;
-}
+  }
 }

@@ -70,6 +70,7 @@
 
 .form input::placeholder{
     color: rgb(196, 196, 196);
+
 }
 
 .textarea{
@@ -83,6 +84,7 @@
 
 .textarea::placeholder{
      color: rgb(196, 196, 196);
+
 }
 
 .btnGreen {
@@ -108,6 +110,7 @@
     .form{
         max-width: 385px;
     }
+
     .formText{
         line-height: 20px;
         width: 90%;

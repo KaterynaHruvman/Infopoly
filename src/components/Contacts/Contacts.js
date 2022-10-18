@@ -21,6 +21,7 @@ const Contacts = () => {
 
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
+
                             <PhoneIcon className={styles.icon} />
                             <a className={styles.contact} href="tel:+44 207 175 5616"> +44 207 175 5616 </a>
                         </li>
@@ -30,6 +31,7 @@ const Contacts = () => {
                         </li>
                         <li className={styles.listItem}>
                             <LocationOnIcon className={styles.icon}/>  221B Baker Street, London
+
 
                          </li>
                         <div className={styles.socials}>

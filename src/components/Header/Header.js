@@ -6,12 +6,7 @@ import styles from './Header.module.css'
 import { StyledEngineProvider } from '@mui/material/styles';
 import MenuComponent from '../Menu/Menu';
 const link = {
-    width: 120,
-    textAlign: 'center',
-    paddingTop: 10,
-    paddingBottom: 10,
-    paddingLeft: 20,
-    paddingRight: 20,
+    textAlign: 'center',  
     borderRadius: 55,
     color: "black",
     fontWeight: "500",
@@ -19,12 +14,7 @@ const link = {
     backgroundColor: "transparent"
 }
 const activeLink = {
-    width: 120,
     textAlign: "center",
-    paddingTop: 10,
-    paddingBottom: 10,
-    paddingLeft: 20,
-    paddingRight: 20,
     borderRadius: 55,
     color: "black",
     fontWeight: "800",

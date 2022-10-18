@@ -60,3 +60,18 @@
         margin-right: 60px;
     } 
 }
+
+@media (min-width: 1920px) { 
+    .clientsWrapper{
+        padding: 140px 0px;
+    }
+
+    .marqueeWrapper{
+        margin-top: 60px;    
+    }  
+
+    .logo {
+        height: 80px;
+        margin-right: 80px;
+    } 
+}

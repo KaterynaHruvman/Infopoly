@@ -21,16 +21,17 @@ const Contacts = () => {
 
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
-                            <PhoneIcon sx={{ fontSize: '20px', mr: '15px' }} />
+
+                            <PhoneIcon className={styles.icon} />
                             <a className={styles.contact} href="tel:+44 207 175 5616"> +44 207 175 5616 </a>
                         </li>
                         <li className={styles.listItem}>
-                            <EmailIcon sx={{ fontSize: '20px', mr: '15px' }} />
+                            <EmailIcon className={styles.icon} />
                             <a className={styles.contact} href="e-mail: contact@infopoly.com">contact@infopoly.com </a>
                         </li>
                         <li className={styles.listItem}>
-                            <LocationOnIcon sx={{ fontSize: '20px', mr: '15px' }} /> C/O Intouch Accounting Everdene House, Deansleigh Road,
-                             Bournemouth, United Kingdom, BH7 7DU
+                            <LocationOnIcon className={styles.icon}/>  221B Baker Street, London
+
 
                          </li>
                         <div className={styles.socials}>

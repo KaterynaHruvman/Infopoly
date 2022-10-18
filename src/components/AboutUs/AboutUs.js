@@ -46,6 +46,8 @@ const AboutUs = () => {
                     <div className={styles.titleWrapper}>
                         <span className={styles.title}> Meet our Founders</span>
                     </div>
+                    <div className={styles.wrapperFounders}>
+
                     <div className={styles.founders}>
                         <div className={styles.text}>
                             <img
@@ -86,6 +88,7 @@ const AboutUs = () => {
                                 </p>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </Container>

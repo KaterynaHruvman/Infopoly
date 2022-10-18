@@ -1,7 +1,7 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/images/infoPoly_logo 1.png';
 import Container from '../Container/Container';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <section className={styles.footer}>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <div className={styles.navigation}> 
                         <div className={styles.company}>
                             <h3 className={styles.title}>Company</h3>
-                            <span className={styles.companyNav}>About</span>
+                            <Link className={styles.companyNav} to="/aboutus">About</Link>
                         </div>
 
                         <div className={styles.region}>

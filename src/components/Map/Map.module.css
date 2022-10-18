@@ -64,7 +64,50 @@
 }
 
 @media (min-width: 1920px) {    
+     .map { 
+        padding: 140px 0px;
+    }
+
     .mapWrapper {
-        max-width: 1000px;
+        max-width: 1200px;
     }    
+}
+
+@media (min-width: 2080px) {
+    .mapWrapper {
+        max-width: 1300px;
+    }
+
+    .title{
+      font-size: 28px;
+      line-height: 30px; 
+    
+    }
+}
+
+@media (min-width: 2560px) {
+    .mapWrapper {
+        width: 1900px;
+    }
+
+    .title{
+      font-size: 28px;
+      line-height: 30px; 
+    
+    }
+}
+
+@media (min-width: 2990px) {
+    .mapWrapper {
+        width: 100%;
+    }
+
+    image {
+        width: 1900px !important; 
+    }
+
+    .title{
+      font-size: 28px;
+      line-height: 30px;     
+    }
 }

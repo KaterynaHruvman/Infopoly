@@ -35,7 +35,7 @@
 }
 
 .link:not(:last-child){
-  margin-right: 25px;
+  margin-right: 45px;
 }
 
 
@@ -83,5 +83,15 @@
   }    
 }
 
+@media (min-width: 2080px) {
+  .logo {
+    height: 50px;
+  }
+
+  .link {
+    font-size: 18px;
+    line-height: 18px;    
+  } 
+}
 
 

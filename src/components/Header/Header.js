@@ -1,12 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import Container from "../Container/Container";
-
+import Bunner from '../Bunner/Bunner';
 import logo from "../../assets/images/infoPoly_logo.svg";
 import styles from './Header.module.css'
 import { StyledEngineProvider } from '@mui/material/styles';
 import MenuComponent from '../Menu/Menu';
 const link = {
-    textAlign: 'center',  
+    textAlign: 'center',
     borderRadius: 55,
     color: "black",
     fontWeight: "500",
@@ -23,6 +23,7 @@ const activeLink = {
 const Header = () => {
     return (
         <section className={styles.header}>
+            <Bunner />
             <Container>
                 <div className={styles.appbar}>
                     <NavLink to='/'>

@@ -12,10 +12,10 @@ const Bunner = () => {
 
             <div className={styles.marqueeWrapper}>
 
-               <Marquee loop="20" gradient={false}>
+               <Marquee loop="20" gradient='false'>
                   <span className={styles.title}>  We are againts War</span>
                   <span className={styles.title}>  #StandWithUkraine</span>
-                  <button className={styles.button}><a href="https://war.ukraine.ua/">SUPPORT</a></button>
+                  <button className={styles.button}><a href="https://war.ukraine.ua/">Support</a></button>
 
                </Marquee>
             </div>

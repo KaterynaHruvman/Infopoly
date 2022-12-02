@@ -62,7 +62,7 @@ const HeroSection = () => {
 
                     <button
                         onClick={() => setShowForm((prev) => !prev)}
-                        className={styles.btn + " " + styles.btnGreen + " " + styles.btnAnimate}
+                        className={styles.btn + " " + styles.btnGreen + " " + styles.btnAnimate + " " + "animate__animated animate__pulse animate__repeat-3"}
                         type="button"
                     >
                         Consult

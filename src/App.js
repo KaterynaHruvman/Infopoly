@@ -7,19 +7,22 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contacts from './components/Contacts/Contacts';
-import Bunner from './components/Bunner/Bunner'
+import Banner from './components/Banner/Banner';
 
 function App() {
   return (
+    <>
     <div className="App">
-      {/* <Bunner /> */}
       <Header />
+      {/* <Banner/> */}
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<Contacts />} />
       </Routes>
     </div>
+    </>
+    
   );
 }
 

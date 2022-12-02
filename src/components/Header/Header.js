@@ -1,10 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 import Container from "../Container/Container";
-import Bunner from '../Bunner/Bunner';
 import logo from "../../assets/images/infoPoly_logo.svg";
 import styles from './Header.module.css'
 import { StyledEngineProvider } from '@mui/material/styles';
 import MenuComponent from '../Menu/Menu';
+import Banner from '../Banner/Banner';
+
 const link = {
     textAlign: 'center',
     borderRadius: 55,
@@ -23,7 +24,7 @@ const activeLink = {
 const Header = () => {
     return (
         <section className={styles.header}>
-            <Bunner />
+            <Banner/>
             <Container>
                 <div className={styles.appbar}>
                     <NavLink to='/'>
@@ -44,18 +45,18 @@ const Header = () => {
                         >
                             About us
                       </NavLink>
-                        <NavLink
+                        {/* <NavLink
                             className={styles.link}
                             style={({ isActive }) => isActive ? activeLink : link}
                             to="/contactus"
                         >
                             Contact us
-                      </NavLink>
-                        {/* <NavLink to="/contactus">
+                      </NavLink> */}
+                        <NavLink to="/contactus">
                       <button className={styles.headermenuBtn} type="button">
                           Contact us
                       </button>
-                      </NavLink> */}
+                      </NavLink>
                     </div>
                     <StyledEngineProvider injectFirst>
                         <MenuComponent />

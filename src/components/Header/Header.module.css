@@ -31,9 +31,14 @@
   background-color: rgb(245, 211, 100);
   cursor: pointer;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
 .headermenuBtn:hover{
+  background-color: rgb(255, 168, 36);
   transform: scale(105%);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
 }

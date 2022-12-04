@@ -6,7 +6,6 @@
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 20px;
-  margin-top: 30px;
 }
 
 .infoContainer{
@@ -15,6 +14,7 @@
   text-align: center;
   font-style: normal;
   color: #152A3D;
+  margin-top: 30px;
 }
 
 .heading {
@@ -30,7 +30,7 @@
   line-height: 6vw;
 }
 
-.btnGreen {
+.btn {
   display: block;
   margin: 0 auto;
   margin-top: 30vw;
@@ -43,15 +43,15 @@
   line-height: 6vw;
   text-align: center;
   color: #ffffff;
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
 
-.btnGreen:hover{
+.btn:hover{
   transform: scale(105%);
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.2);
 }
+
 @media (min-width: 428px)  {
   /* .menuBtn{
     display: none;
@@ -61,10 +61,9 @@
 @media (min-width: 428px) and (max-width: 768px)  {
   .description {
     font-size: 3vw;
-    line-height: 4.5vw;
-  
-   
+    line-height: 4.5vw;   
   }
+
   .heading {
     font-size: 5.5vw;
     line-height: 7vw;
@@ -76,8 +75,7 @@
   .container{
     background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
     padding-bottom: 80px; 
-  }      
-
+  }
   
   .infoContainer{
    padding-top: 120px;
@@ -101,7 +99,7 @@
     text-align: left;
   }
 
-  .btnGreen {
+  .btn {
     width: 150px;
     margin: 0;
     margin-top: 60px;
@@ -135,7 +133,7 @@
     max-width: 500px;
   }
   
-  .btnGreen {
+  .btn {
     width: 150px;
     height: 56px;
     margin: 0;
@@ -190,7 +188,7 @@
     max-width: 740px;
   }
 
-  .btnGreen {
+  .btn {
     width: 180px;
     height: 60px;
     margin: 0;
@@ -222,7 +220,7 @@
     max-width: 780px;
   }
 
-  .btnGreen {
+  .btn {
     width: 180px;
     height: 60px;
     margin: 0;

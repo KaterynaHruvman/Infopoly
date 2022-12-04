@@ -1,10 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import Container from "../Container/Container";
 import logo from "../../assets/images/infoPoly_logo.svg";
-import styles from './Header.module.css'
 import { StyledEngineProvider } from '@mui/material/styles';
 import MenuComponent from '../Menu/Menu';
 import Banner from '../Banner/Banner';
+import styles from './Header.module.css'
 
 const link = {
     textAlign: 'center',

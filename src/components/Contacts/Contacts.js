@@ -9,19 +9,21 @@ import phone from '../../assets/images/auricular-phone-symbol-in-a-circle_icon-i
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import logo from "../../assets/images/logo_infopoly.png";
 // import { SubtitlesOutlined } from '@mui/icons-material';
 const Contacts = () => {
     return (
         <>
             <section className={styles.contacts}>
                 <Container>
-
-                    <h2 className={styles.title}> GET IN TOUCH</h2>
-                    <h3 className={styles.text}> We look forward to start working with you.</h3>
-
                     <ul className={styles.list}>
+                        <div className={styles.logoWrapper}>
+                            <img src={logo} className={styles.logo} alt={"logo"} />
+                            <h2 className={styles.title}> GET IN TOUCH</h2>
+                            <h3 className={styles.text}> We look forward to start working with you.</h3>
+                        </div>
+                      
                         <li className={styles.listItem}>
-
                             <PhoneIcon className={styles.icon} />
                             <a className={styles.contact} href="tel:+44 207 175 5616"> +44 207 175 5616 </a>
                         </li>
@@ -30,10 +32,10 @@ const Contacts = () => {
                             <a className={styles.contact} href="e-mail: contact@infopoly.com">contact@infopoly.com </a>
                         </li>
                         <li className={styles.listItem}>
-                            <LocationOnIcon className={styles.icon}/>  221B Baker Street, London
+                            <LocationOnIcon className={styles.icon}/>
+                            <span className={styles.address}>C/O Intouch Accounting Everdene House,<br/> Deansleigh Road, Bournemouth,<br/>United Kingdom, BH7 7DU </span>
 
-
-                         </li>
+                        </li>
                         <div className={styles.socials}>
                             <li className={styles.listItem}>
                                 <a href="https://www.linkedin.com/company/infopoly-ltd/?original_referer=https%3A%2F%2Fwww.infopoly.com%2F" className={styles.listItemA}><img src={linkdin} className={styles.listItemImg} /></a>

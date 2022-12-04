@@ -1,6 +1,6 @@
 .contacts {
     background-color: rgb(243, 254, 249);
-    /* height: 90vh; */
+    height: 90vh;
     width: 100%;
     margin-top: 60px;
     padding-top: 40px;
@@ -20,7 +20,7 @@
       text-align: left;  
     }
 
-    .list {
+    .list {      
       margin-top: 15vw;
       height: fit-content;
       display: flex;
@@ -29,11 +29,24 @@
       padding: 40px;
       padding-top: 50px;
       border-radius: 5px;
-      box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+      background-image: url('../../assets/images/header/infoPoly_main_bg_mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
-     .icon {
+    .logoWrapper{
+      display: flex;
+    }
+
+    .logo{
+      height: auto;
+      width: 40px;
+    }
+
+    .icon {
       font-size: 20px;
+      color: #203d58;
     }
 
     .listItem{
@@ -41,12 +54,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       width: 100%;
       font-size: 14px;
       line-height: 22px;
       text-align: left;
       color: #152A3D;
       margin-bottom: 20px;
+    }
+
+    .address{
+      text-align: center;
     }
   
     .contact {
@@ -55,11 +73,11 @@
       /* text-decoration: none; */
     }
 
-    .socials {
+    .socials {    
       margin: 0 auto;
       margin-top: 20px;
       display: flex;
-      align-items: center;  
+      align-items: center;
     }
 
     .socials .listItem {

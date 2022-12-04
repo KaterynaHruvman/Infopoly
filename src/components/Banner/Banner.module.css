@@ -1,6 +1,5 @@
 .themeBannerOpen {
     position: relative;
-    /* top: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +8,6 @@
     z-index: 20;
     padding: 15px 25px;
     background-color: rgba(2, 46, 69, 0.721);
-    /* opacity: 80%; */
 }
 
 .themeBannerClosed {
@@ -17,8 +15,6 @@
 }
 
 .themeBannerWrapper {
-    /* display: flex;
-    align-items: center; */
     background-color:blur;
 }
 
@@ -36,12 +32,19 @@
 .button{
     padding: 5px 15px;
     font-size: 8px;
+    font-weight: 700;
     cursor: pointer;
     background: linear-gradient(0deg, rgba(255,227,0,1) 50%, rgba(130,196,123,1) 50%, rgba(0,164,250,1) 50%);
-
+    /* background-color:  rgb(255, 217, 0); */
     margin-left: 10px;
     border-radius: 15px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
+
+.button:hover{
+    transform: scale(105%);
+}
+
 
 @media (min-width: 425px)  {
     .title{

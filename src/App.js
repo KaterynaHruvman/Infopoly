@@ -14,7 +14,7 @@ function App() {
     <>
     <div className="App">
       <Header />
-      {/* <Banner/> */}
+      <Banner/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/aboutus" element={<AboutUs />} />

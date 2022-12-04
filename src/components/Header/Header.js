@@ -24,7 +24,7 @@ const activeLink = {
 const Header = () => {
     return (
         <section className={styles.header}>
-            <Banner/>
+            {/* <Banner/> */}
             <Container>
                 <div className={styles.appbar}>
                     <NavLink to='/'>

@@ -45,14 +45,14 @@ const Banner = () => {
             onClick={onCloseClick}
             sx={{
               position: 'absolute',
-              right: '20px',
+              right: '10px',
             }}>
             
               <CloseIcon />
             </IconButton>
 
          <div className={styles.themeBannerWrapper}>            
-            <span className={styles.title}> We are against War #StandWithUkraine</span>
+            <span className={styles.title}>#StandWithUkraine</span>
             <button className={styles.button}><a href="https://war.ukraine.ua/">Support</a></button>               
          </div>
       </section >

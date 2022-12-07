@@ -18,13 +18,14 @@ const MainPage = () => (
     <OurClient />
     <CookieConsent location="bottom"
       cookieName="myAwesomeCookieName3"
-      expires={999} overlay enableDeclineButton buttonStyle={{ backgroundColor: "#07DA62" }}
+      expires={999} overlay enableDeclineButton buttonStyle={{ backgroundColor: "#07DA62", borderRadius: "15px", }}
       declineButtonStyle={{
-        backgroundColor: " #FFC403",
+        backgroundColor: "#4a4d50",
         color: "black",
+        borderRadius: "15px",
       }}
-      declineButtonText="I DECLINE"
-      buttonText="I ACCEPT"
+      declineButtonText="DECLINE"
+      buttonText="ACCEPT"
       flipButtons>
       This website uses cookies to provide services at the highest level.  By continuing to use the site, you agree to their use
 </CookieConsent>

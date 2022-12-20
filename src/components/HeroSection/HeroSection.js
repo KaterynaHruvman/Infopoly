@@ -54,7 +54,7 @@ const HeroSection = () => {
                 />
             )}
             <Container>
-                <div className={styles.infoContainer}>
+                <div id="header" className={styles.infoContainer}>
                     <h1 className={styles.heading}>Experts in managing and manipulating data</h1>
                     <p className={styles.description}>
                         A highly skilled agency specialising in the management of data for companies of all sizes. We can help you manage your full data lifecycle from retrieval to presentation.

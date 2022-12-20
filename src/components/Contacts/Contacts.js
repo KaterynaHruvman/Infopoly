@@ -30,7 +30,7 @@ const Contacts = () => {
 
                                 </li>
                                 <li className={styles.listItem}>
-                                    <a href='https://www.upwork.com/nx/wm/client/dashboard' target="_blank" className={styles.listItemA}><img src={upwork} className={styles.listItemImg} /></a>
+                                    <a href='https://www.upwork.com/' target="_blank" className={styles.listItemA}><img src={upwork} className={styles.listItemImg} /></a>
                                 </li>
                             </div>
                         </div>

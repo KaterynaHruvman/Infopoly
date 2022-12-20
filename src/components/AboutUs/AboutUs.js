@@ -13,7 +13,7 @@ const AboutUs = () => {
             <Container>
                 <div className={styles.wrapper}>
                     <div className={styles.imgWrapper}>
-                        <img
+                        <img id="header"
                             src={about_picture}
                             className={styles.imgFounders}
                             alt="infopoly founders"
@@ -48,47 +48,47 @@ const AboutUs = () => {
                     </div>
                     <div className={styles.wrapperFounders}>
 
-                    <div className={styles.founders}>
-                        <div className={styles.text}>
-                            <img
-                                src={dariush_picture}
-                                className={styles.img}
-                                alt="infopoly founders"
-                            />
-                            <div className={styles.infoWrapper}>
-                                <p className={styles.name}>Dariusz Bielak</p>
-                                <p className={styles.bio}>
-                                    I enjoy building technology focused teams. Leading by example
-                                    and challenging my colleagues to become best possible versions
-                                    of themselves either in work or in life. In my career I always
-                                    find myself outside my comfort zone, either in internally or
-                                    customer focus roles. My experience covers traditional Data
-                                    Warehouse, BigData solutions, DevOps and Data Engineering.I
-                                    believe in leading by example and futility of long-term
-                                    planning.
+                        <div className={styles.founders}>
+                            <div className={styles.text}>
+                                <img
+                                    src={dariush_picture}
+                                    className={styles.img}
+                                    alt="infopoly founders"
+                                />
+                                <div className={styles.infoWrapper}>
+                                    <p className={styles.name}>Dariusz Bielak</p>
+                                    <p className={styles.bio}>
+                                        I enjoy building technology focused teams. Leading by example
+                                        and challenging my colleagues to become best possible versions
+                                        of themselves either in work or in life. In my career I always
+                                        find myself outside my comfort zone, either in internally or
+                                        customer focus roles. My experience covers traditional Data
+                                        Warehouse, BigData solutions, DevOps and Data Engineering.I
+                                        believe in leading by example and futility of long-term
+                                        planning.
                                 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.founders}>
-                        <div className={styles.text}>
-                            <img
-                                src={matt_picture}
-                                className={styles.img}
-                                alt="infopoly founders"
-                            />
-                            <div className={styles.infoWrapper}>
-                                <p className={styles.name}>Matthew Thrower</p>
-                                <p className={styles.bio}>
-                                    I have worked with data for all my career and love liaising with
-                                    my clients to bring their ideas to life and give them insights
-                                    into their data they had previously thought impossible. Although
-                                    the technologies, datasets and methods may change these values
-                                    still underpin my work.
+                        <div className={styles.founders}>
+                            <div className={styles.text}>
+                                <img
+                                    src={matt_picture}
+                                    className={styles.img}
+                                    alt="infopoly founders"
+                                />
+                                <div className={styles.infoWrapper}>
+                                    <p className={styles.name}>Matthew Thrower</p>
+                                    <p className={styles.bio}>
+                                        I have worked with data for all my career and love liaising with
+                                        my clients to bring their ideas to life and give them insights
+                                        into their data they had previously thought impossible. Although
+                                        the technologies, datasets and methods may change these values
+                                        still underpin my work.
                                 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </Container>

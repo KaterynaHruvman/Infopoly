@@ -8,6 +8,7 @@ import styles from './AboutUs.module.css';
 
 
 const AboutUs = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
     return (
         <>
             <Container>

@@ -21,9 +21,9 @@ const Footer = () => {
                     <div className={styles.navigation}>
                         <div className={styles.company}>
                             <h3 className={styles.title}>Company</h3>
-                            <ScrollIntoView selector="#header">
+                            {/* <ScrollIntoView selector="#header"> */}
                                 <Link className={styles.companyNav} to="/aboutus">About</Link>
-                            </ScrollIntoView>
+                            {/* </ScrollIntoView> */}
                         </div>
 
                         <div className={styles.region}>

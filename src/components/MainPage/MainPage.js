@@ -9,8 +9,11 @@ import Footer from "../Footer/Footer";
 import styles from './MainPage.module.css'
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import { colors } from "@mui/material";
-const MainPage = () => (
-  <>
+
+const MainPage = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+  return(
+    <>
     <HeroSection />
     <OurServices />
     <Map />
@@ -31,6 +34,9 @@ const MainPage = () => (
 </CookieConsent>
     <Footer />
   </>
-);
+  )
+  
+
+};
 
 export default MainPage;

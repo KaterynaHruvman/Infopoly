@@ -1,7 +1,6 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/images/infoPoly_logo 1.png';
 import Container from '../Container/Container';
-import ScrollIntoView from 'react-scroll-into-view'
 import { Link, NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
@@ -21,9 +20,7 @@ const Footer = () => {
                     <div className={styles.navigation}>
                         <div className={styles.company}>
                             <h3 className={styles.title}>Company</h3>
-                            {/* <ScrollIntoView selector="#header"> */}
                                 <Link className={styles.companyNav} to="/aboutus">About</Link>
-                            {/* </ScrollIntoView> */}
                         </div>
 
                         <div className={styles.region}>

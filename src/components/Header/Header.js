@@ -3,8 +3,6 @@ import Container from "../Container/Container";
 import logo from "../../assets/images/infoPoly_logo.svg";
 import { StyledEngineProvider } from '@mui/material/styles';
 import MenuComponent from '../Menu/Menu';
-import ScrollIntoView from 'react-scroll-into-view'
-import Banner from '../Banner/Banner';
 import styles from './Header.module.css'
 
 const link = {
@@ -26,8 +24,6 @@ const Header = () => {
 
     return (
         <section className={styles.header}>
-            {/* <Banner/> */}
-            <ScrollIntoView selector="#header" behavior="smooth" block="end" inline="top">
                 <Container>
 
                     <div className={styles.appbar}>
@@ -70,7 +66,6 @@ const Header = () => {
                     </div>
 
                 </Container>
-            </ScrollIntoView>
         </section >
     );
 };

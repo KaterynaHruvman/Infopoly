@@ -1,7 +1,7 @@
 import FooterSmall from '../FooterSmall/FooterSmall';
-import about_picture from '../../assets/images/about_us/corporate_portrait.jpg'
-import dariush_picture from '../../assets/images/about_us/dariusz-2.jpg'
-import matt_picture from '../../assets/images/about_us/matt-2.jpg'
+import about_picture from '../../assets/images/about_us/corporate_portrait.jpeg';
+import dariush_picture from '../../assets/images/about_us/dariusz (2).jpg';
+import matt_picture from '../../assets/images/about_us/matt-2.jpg';
 import Container from '../Container/Container';
 
 import styles from './AboutUs.module.css';

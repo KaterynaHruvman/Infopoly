@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .infoContainer{
@@ -14,6 +14,7 @@
   text-align: center;
   font-style: normal;
   color: #152A3D;
+  margin-top: 50px;
 }
 
 .heading {
@@ -29,38 +30,39 @@
   line-height: 6vw;
 }
 
-.btnGreen {
+.btn {
   display: block;
   margin: 0 auto;
   margin-top: 30vw;
   padding: 10px 40px;
   border-radius: 55px;
-  background-color: #07DA62;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(245, 211, 100);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   font-weight: 700;
   font-size: 5vw;
   line-height: 6vw;
   text-align: center;
   color: #ffffff;
-  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  cursor: pointer;  
 }
-.btnGreen:hover{
-  background-color: #07DA62;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.8);
+
+
+.btn:hover{
+  background-color: rgb(255, 168, 36);
+  transform: scale(105%) !important;
+  box-shadow: 1px 5px 7px rgba(95, 44, 2, 0.2);
 }
-@media (min-width: 428px)  {
-  /* .menuBtn{
-    display: none;
-  } */
-  
-}
+
 @media (min-width: 428px) and (max-width: 768px)  {
   .description {
     font-size: 3vw;
-    line-height: 4.5vw;
-  
-   
+    line-height: 4.5vw;   
   }
+
   .heading {
     font-size: 5.5vw;
     line-height: 7vw;
@@ -68,12 +70,20 @@
   }
 }
 
+@media (min-width: 480px) { 
+  .container{    
+    padding-bottom: 80px; 
+  }
+
+  .infoContainer{
+    margin-top: 53px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) { 
   .container{
-    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');
-    padding-bottom: 80px; 
-  }      
-
+    background-image: url('../../assets/images/header/infoPoly_main_bg_tablet.jpg');    
+  }
   
   .infoContainer{
    padding-top: 120px;
@@ -97,7 +107,7 @@
     text-align: left;
   }
 
-  .btnGreen {
+  .btn {
     width: 150px;
     margin: 0;
     margin-top: 60px;
@@ -131,7 +141,7 @@
     max-width: 500px;
   }
   
-  .btnGreen {
+  .btn {
     width: 150px;
     height: 56px;
     margin: 0;
@@ -186,7 +196,7 @@
     max-width: 740px;
   }
 
-  .btnGreen {
+  .btn {
     width: 180px;
     height: 60px;
     margin: 0;
@@ -218,7 +228,7 @@
     max-width: 780px;
   }
 
-  .btnGreen {
+  .btn {
     width: 180px;
     height: 60px;
     margin: 0;

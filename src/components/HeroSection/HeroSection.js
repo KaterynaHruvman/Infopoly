@@ -54,7 +54,7 @@ const HeroSection = () => {
                 />
             )}
             <Container>
-                <div className={styles.infoContainer}>
+                <div id="header" className={styles.infoContainer}>
                     <h1 className={styles.heading}>Experts in managing and manipulating data</h1>
                     <p className={styles.description}>
                         A highly skilled agency specialising in the management of data for companies of all sizes. We can help you manage your full data lifecycle from retrieval to presentation.
@@ -62,7 +62,7 @@ const HeroSection = () => {
 
                     <button
                         onClick={() => setShowForm((prev) => !prev)}
-                        className={styles.btn + " " + styles.btnGreen + " " + styles.btnAnimate}
+                        className={styles.btn + " " + styles.btnGreen + " " + styles.btnAnimate + " animate__animated animate__pulse animate__repeat-3"}
                         type="button"
                     >
                         Consult

@@ -32,7 +32,7 @@
     src: local("Mulish"),
       url(./fonts/Mulish-Light.ttf) format("truetype");
   }
-
+  
 .App{
     font-family: "Mulish";
     overflow-x: hidden;
